@@ -1,0 +1,101 @@
+.multi-select1 label{
+	margin-left:34px;
+}
+.multi-select2 select{
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-bottomright:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-topright:3px;
+	border:1px solid #DDDDDD;
+	font-size:12px;
+
+}
+.multiSelect {
+	width: 182px;
+	border: solid 1px #BBB;
+	background: #FFF url(../img/dropdown.gif) right center no-repeat;
+	padding: 2px 4px;
+	padding-right: 20px;
+}
+
+.multiSelect.hover {
+	background: #fff url(../img/dropdown_hover.gif) right center no-repeat;
+}
+
+.multiSelect.active, 
+.multiSelect.focus {
+	background-color:#F6F9FB;
+    border:1px solid #B1CFED;
+}
+.multiSelect.hover {
+	background-color:#F6F9FB;
+    border:1px solid #B1CFED;
+}
+
+.multiSelect.active {
+	background: #fff url(../img/dropdown_active.gif) right center no-repeat;
+}
+
+.multiSelectOptions {
+	width: 206px;
+	max-height: 150px;
+	margin-top: -1px;
+	overflow: auto;
+	border: solid 1px #B2B2B2;
+	background: #FFF;
+}
+.multiSelectOptions label{
+	margin:0px;
+	width:182px;
+	display:block;
+	float:left;
+}
+div.industry-input div.multiSelectOptions label,div.department-input div.multiSelectOptions label{
+padding:3px 5px;
+}
+div.industry-input div.multiSelectOptions label input,div.department-input div.multiSelectOptions label input{
+margin:0px 5px 0px 5px;
+}
+form.edit-profile .multiSelectOptions LABEL {
+	padding: 2px 5px;
+	display: block;
+	position:static;
+	padding:0px;
+	font-weight:normal;
+}
+
+.multiSelectOptions LABEL.checked {
+	background: #E6E6E6;
+}
+.multiSelectOptions label{
+margin:2px 0px 2px 5px;
+}
+.multiSelectOptions label input{
+margin: 0px 3px 0px 0px;
+}
+.multiSelectOptions LABEL.selectAll {
+	border-bottom: dotted 1px #CCC;
+	width:182px;
+}
+
+.multiSelectOptions LABEL.hover {
+	background: #CFCFCF;
+}
+div.industry-input label ,div.department-input label{
+color:#333333;
+display:block;
+font-weight:700;
+position:absolute;
+width:172px;
+padding:5px 0pt 0pt 22px;
+}
+.multiSelect{
+margin:0px 0px 0px 14px;
+}
+div.industry-input,div.department-input{
+margin:5px;
+padding:5px;
+}
+div.department-input select,div.industry-input select{
+margin:0px 0px 0px 206px;
+}

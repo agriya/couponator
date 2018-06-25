@@ -1,0 +1,202 @@
+/* Variable Grid System. Learn more ~ http://www.spry-soft.com/grids/ */
+.container_12 {
+	margin-left:auto;
+	margin-right:auto;
+	width: 972px;
+}
+/* Grid>>Global----------------------------------------------------------------------------------------------------*/
+.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7,.grid_8,.grid_9,.grid_10,.grid_11,.grid_12 {
+	display:inline;
+	float:left;
+    margin-left:5px;
+	margin-right:5px;
+}
+.push_1,.pull_1,.push_2,.pull_2,.push_3,.pull_3,.push_4,.pull_4,.push_5,.pull_5,.push_6,.pull_6,.push_7,.pull_7,.push_8,.pull_8,.push_9,.pull_9,.push_10,.pull_10,.push_11,.pull_11,.push_12,.pull_12 {
+	position: relative;
+}
+/* Grid>>Children (Alpha ~ First,Omega ~ Last)----------------------------------------------------------------------------------------------------*/
+.alpha {
+	margin-left:0;
+}
+.omega {
+	margin-right: 0;
+}
+/* Grid>>12 Columns----------------------------------------------------------------------------------------------------*/
+.container_12 .grid_left{
+    float:left;
+}
+.container_12 .grid_right{
+    float:right;
+}
+.container_12 .grid_1 {
+	width:71px;
+}
+.container_12 .grid_2 {
+	width:125px;
+}
+.container_12 .grid_3 {
+	width:192px;
+}
+.container_12 .grid_4 {
+	width:305px;
+}
+.container_12 .grid_5 {
+	width:395px;
+}
+.container_12 .grid_6 {
+	width:476px;
+}
+.container_12 .grid_7 {
+	width:624px;
+}
+.container_12 .grid_8 {
+	width:652px;
+}
+.container_12 .grid_9 {
+	width:719px;
+}
+.container_12 .grid_10 {
+	width:800px;
+}
+.container_12 .grid_11 {
+	width:881px;
+}
+.container_12 .grid_12 {
+	width: 962px;
+}
+/* Prefix Extra Space>>12 Columns----------------------------------------------------------------------------------------------------*/
+.container_12 .prefix_1 {
+	padding-left:81px;
+}
+.container_12 .prefix_2 {
+	padding-left:162px;
+}
+.container_12 .prefix_3 {
+	padding-left:243px;
+}
+.container_12 .prefix_4 {
+	padding-left:324px;
+}
+.container_12 .prefix_5 {
+	padding-left:405px;
+}
+.container_12 .prefix_6 {
+	padding-left:486px;
+}
+.container_12 .prefix_7 {
+	padding-left:567px;
+}
+.container_12 .prefix_8 {
+	padding-left:648px;
+}
+.container_12 .prefix_9 {
+	padding-left:729px;
+}
+.container_12 .prefix_10 {
+	padding-left:810px;
+}
+.container_12 .prefix_11 {
+	padding-left: 891px;
+}
+/* Suffix Extra Space>>12 Columns----------------------------------------------------------------------------------------------------*/
+.container_12 .suffix_1 {
+	padding-right:81px;
+}
+.container_12 .suffix_2 {
+	padding-right:162px;
+}
+.container_12 .suffix_3 {
+	padding-right:243px;
+}
+.container_12 .suffix_4 {
+	padding-right:324px;
+}
+.container_12 .suffix_5 {
+	padding-right:405px;
+}
+.container_12 .suffix_6 {
+	padding-right:486px;
+}
+.container_12 .suffix_7 {
+	padding-right:567px;
+}
+.container_12 .suffix_8 {
+	padding-right:648px;
+}
+.container_12 .suffix_9 {
+	padding-right:729px;
+}
+.container_12 .suffix_10 {
+	padding-right:810px;
+}
+.container_12 .suffix_11 {
+	padding-right: 891px;
+}
+/* Push Space>>12 Columns----------------------------------------------------------------------------------------------------*/
+.container_12 .push_1 {
+	left:81px;
+}
+.container_12 .push_2 {
+	left:162px;
+}
+.container_12 .push_3 {
+	left:243px;
+}
+.container_12 .push_4 {
+	left:324px;
+}
+.container_12 .push_5 {
+	left:405px;
+}
+.container_12 .push_6 {
+	left:486px;
+}
+.container_12 .push_7 {
+	left:567px;
+}
+.container_12 .push_8 {
+	left:648px;
+}
+.container_12 .push_9 {
+	left:729px;
+}
+.container_12 .push_10 {
+	left:810px;
+}
+.container_12 .push_11 {
+	left: 891px;
+}
+/* Pull Space>>12 Columns----------------------------------------------------------------------------------------------------*/
+.container_12 .pull_1 {
+	left:-81px;
+}
+.container_12 .pull_2 {
+	left:-162px;
+}
+.container_12 .pull_3 {
+	left:-243px;
+}
+.container_12 .pull_4 {
+	left:-324px;
+}
+.container_12 .pull_5 {
+	left:-405px;
+}
+.container_12 .pull_6 {
+	left:-486px;
+}
+.container_12 .pull_7 {
+	left:-567px;
+}
+.container_12 .pull_8 {
+	left:-648px;
+}
+.container_12 .pull_9 {
+	left:-729px;
+}
+.container_12 .pull_10 {
+	left:-810px;
+}
+.container_12 .pull_11 {
+	left: -891px;
+}

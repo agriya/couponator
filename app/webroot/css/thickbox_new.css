@@ -1,0 +1,631 @@
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ---------->>> global settings needed for thickbox <<<-----------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+*{padding: 0; margin: 0;}
+
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ---------->>> thickbox specific link and font settings <<<------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+#TB_window {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #6f6f78;
+}
+
+#TB_secondLine {
+	font: 10px Arial, Helvetica, sans-serif;
+	color:#666666;
+}
+
+#TB_window a:link {color: #fff;}
+#TB_window a:visited {color: #fff;}
+#TB_window a:hover {color: #00A7FF;}
+#TB_window a:active {color: #fff;}
+#TB_window a:focus{color: #fff;}
+
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ---------->>> thickbox settings <<<-----------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------------------------------------------------------*/
+#TB_overlay {
+	position: fixed;
+	z-index:100;
+	top: 0px;
+	left: 0px;
+	height:100%;
+	width:100%;
+}
+
+.TB_overlayMacFFBGHack {background: url(macFFBgHack.png) repeat;}
+.TB_overlayBG {
+	background-color:#000;
+	filter:alpha(opacity=75);
+	-moz-opacity: 0.75;
+	opacity: 0.75;
+}
+
+* html #TB_overlay { /* ie6 hack */
+     position: absolute;
+     height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+#TB_window {
+	position: fixed;
+	background: #ffffff;
+	z-index: 102;
+	color:#000000;
+	display:none;
+/*--	border: 4px solid #525252; */
+	text-align:left;
+	top:50%;
+	left:50%;
+}
+
+* html #TB_window { /* ie6 hack */
+position: absolute;
+margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
+}
+
+#TB_window img#TB_Image {
+	display:block;
+	margin: 15px 0 0 15px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #666;
+	border-left: 1px solid #666;
+}
+
+#TB_caption{
+	height:25px;
+	padding:7px 30px 10px 25px;
+	float:left;
+}
+
+#TB_closeWindow{
+	height:25px;
+	padding:11px 25px 10px 0;
+	float:right;
+}
+
+#TB_closeAjaxWindow{
+	padding:7px 10px 5px 0;
+	margin:0px 10px 1px 0px;
+	text-align:right;
+	float:right;
+}
+
+#TB_ajaxWindowTitle{
+	float:left;
+	padding:7px 0 5px 10px;
+	margin-bottom:1px;
+}
+
+#TB_title{
+/*--	background-color:#e8e8e8;*/
+	height:27px;
+}
+
+#TB_ajaxContent{
+	clear:both;
+	padding:2px 15px 15px 15px;
+	overflow:auto;
+	text-align:left;
+	line-height:1.4em;
+	position:relative;
+}
+
+#TB_ajaxContent.TB_modal{
+	padding:15px ;
+}
+
+#TB_ajaxContent p{
+	padding:5px 0px 5px 0px;
+}
+#TB_ajaxContent div.users-information-module p{
+	padding:5px 0px 5px 20px;
+}
+#TB_load{
+	position: fixed;
+	display:none;
+	height:13px;
+	width:208px;
+	z-index:103;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -104px; /* -height/2 0 0 -width/2 */
+}
+
+* html #TB_load { /* ie6 hack */
+position: absolute;
+margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');
+}
+
+#TB_HideSelect{
+	z-index:99;
+	position:fixed;
+	top: 0;
+	left: 0;
+	background-color:#fff;
+	border:none;
+	filter:alpha(opacity=0);
+	-moz-opacity: 0;
+	opacity: 0;
+	height:100%;
+	width:100%;
+}
+
+* html #TB_HideSelect { /* ie6 hack */
+     position: absolute;
+     height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');
+}
+
+#TB_iframeContent{
+	clear:both;
+	border:none;
+	margin-bottom:-1px;
+	margin-top:1px;
+	_margin-bottom:1px;
+}
+
+
+/* Style to show the round corner effect in lightbox */
+#TB_window div.top-round-content div.top-left {
+	background:transparent url(../img/thickbox-images/top-left.png) no-repeat scroll -6px -6px;
+}
+#TB_window div.top-right {
+	background:transparent url(../img/thickbox-images/top-right.png) no-repeat scroll 101% -5px;
+}
+#TB_window div.bottom-left {
+	background:transparent url(../img/thickbox-images/bottom-left.png) no-repeat scroll -6px 101%;
+}
+#TB_window div.bottom-right {
+	background:transparent url(../img/thickbox-images/bottom-right.png) no-repeat scroll 101% 101%;
+}
+#TB_closeWindowButton{
+    display:block;
+    text-indent:-2000em;
+    width:77px;
+    height:22px;
+	background:transparent url(../img/thickbox-images/close_large.png) no-repeat;
+	font-size: 5px;
+	text-align:left;
+	color:#fff;
+	margin:-10px 30px 0px 0px;
+	float:right;
+ }
+.bottom-close-content{
+	height: 10px;
+	padding: 25px 10px 15px 10px;
+	margin:0px 0px 0px 0px;
+}
+
+/* add and cancel  style is begin */
+
+#TB_window a.genres-list-items {
+	clear:both;
+	background:url(../img/add_btn.png) no-repeat;
+	display:block;
+	float:right;
+	height:20px;
+	width:82px;
+	padding:1px 0px 0px 0px;
+	margin:5px 0px 10px 0px;
+	text-align:center;
+	color:#fff;
+}
+#TB_window a.genres-cancel-link {
+	color:#8EBCE1;
+	display:block;
+	float:right;
+	font-size:12px;
+	height:20px;
+	margin:5px 7px 0px 0px;
+	padding-top:3px;
+	width:40px;
+}
+#TB_window div.title-bar h4 {
+	color:#C8CCE1;
+	font-size:12px;
+	margin:-11px 0px 7px 7px;
+}
+*+html #TB_window div.title-bar h4{
+    	margin:-11px 0px 3px 7px;
+    	padding:0px 0px 0px 0px;
+}
+#TB_window h4 {
+	text-transform:uppercase;
+}
+/* Register page genre lightbox styel for thickbox ends */
+a.genres-title-name{
+    display:block;
+    width:204px;
+    height:22px;
+    background:transparent url(../img/combo.png) no-repeat top left;
+    padding:4px 0px 0px 6px;
+    color:#464646;
+    margin:-4px 0px 0px 0px;
+}
+#TB_window div.genre-list {
+	margin:0px 0px 0px 0px;
+	clear:both;
+}
+#TB_window div.instrument-list{
+	margin:0px 0px 0px 0px;
+	clear:both;
+}
+.TB_modal .instrument-list .select {
+	clear:both;
+	margin:0px 0px 0px 2px;
+}
+.TB_modal .instrument-list .checkbox {
+	width:30px;
+	float:left;
+	margin:0px 0px 0px 0px;
+	width:110px;
+	color:#9595A1;
+}
+.TB_modal .instrument-list .checkbox input {
+	margin:0px 4px 0px 0px;
+}
+.TB_modal .instrument-list .checkbox label {
+	font-size:11px;
+	text-transform:capitalize;
+	font-family:arial;
+	color:#9795A3;
+}
+.TB_modal div.org-type-list .select {
+	clear:both;
+	margin:0px 0px 0px 2px;
+}
+.TB_modal div.org-type-list .checkbox {
+	width:30px;
+	float:left;
+	margin:0px 0px 0px 0px;
+	width:140px;
+	color:#9595A1;
+}
+div.input div.checkbox {
+	float:left;
+	height:18px;
+	width:165px;
+	margin: 0px 0px 0px 0px;
+	overflow:hidden;
+}
+div.input div.checkbox label {
+	padding:0 0 0 5px;
+	font-size:11px;
+	text-transform:capitalize;
+	font-family:arial;
+	color:#9795A3;
+}
+div#TB_window div.input div.radio-list {
+	float:left;
+	height:18px;
+	width:205px;
+	margin:0px 0px 2px 0px;
+}
+div#TB_window div.input div.radio-list label {
+    color:#9795A3;
+    font-family:arial;
+    font-size:11px;
+    padding:0pt 0pt 0pt 4px;
+    text-transform:capitalize;
+}
+div.org-type-list div.input {
+	clear:both;
+}
+div.org-type-list div.input div.radio-list input {
+	margin:0px 5px 0px 0px;
+}
+#TB_window div.bot-bar {
+	height:8px;
+	position:absolute;
+	background:transparent url(../img/bb.png) repeat-x 100% 0%;
+	margin:0px 0px 0px 9px;
+}
+ul.shared-link li{
+    display:block;
+    width:37px;
+    height:28px;
+    float:left;
+}
+#TB_window div.cv-preview-page{
+    border:1px solid #cccccc;
+    height:auto;
+    padding:10px;
+}
+#TB_window div.profile-view-comments div.paging{
+    margin:8px 0px 0px 255px;
+}
+#TB_window div.profile-view-comments a{
+    color:#8fc1e7;
+}
+#TB_window div.company-type-other-links span.other-links{
+    display:block;
+    margin:10px 0px 10px 7px;
+    position:relative;
+    color:#6F6F79;
+}
+/* >>>>>>>>>>>>>>>>>>  Email links style is begin */
+#TB_window div.company-type-other-links span.other-links:hover{
+    color:#8fc1e7;
+    text-decoration:underline;
+}
+#TB_window div#mail-sharelinks ul.ui-tabs-nav li a{
+    margin:0px 3px 0px -3px;
+    background:transparent url(../img/message-inbox.png) no-repeat top left;
+    width:80px;
+    height:22px;
+    font-size:12px;
+	font-weight:bold;
+    color:#fff;
+    text-decoration:none;
+    text-transform:uppercase;
+    position:static;
+	padding-top:2px;
+}
+#TB_window div#mail-sharelinks ul.ui-tabs-nav li a:hover{
+    background:transparent url(../img/message-sent.png) no-repeat top left;
+    width:80px;
+    height:22px;
+    font-size:12px;
+	font-weight:bold;
+    color:#D0D4E7;
+}
+*+html #TB_window div#mail-sharelinks ul.ui-tabs-nav li.bar-right{
+    margin:0px 0px 0px 0px;
+}
+#TB_window div#mail-sharelinks ul.ui-tabs-nav li{
+    margin:0px 5px 0px 0px;
+}
+#TB_window div.link-bar ul {
+	clear:both;
+	margin:10px 0 0 0;
+}
+#TB_window div.link-bar ul li {
+	display:inline;
+}
+#TB_window div.link-bar ul li a {
+	color:#8FC0E8;
+}
+/* <<<<<<<<<<<<<<<<<<<<<< Email Links style is end */
+div#TB_window div#film-genre h3{
+   font-size:13px;
+   font-weight:normal;
+   margin:10px 0px 3px -5px;
+   padding:0px 0px 10px 0px;
+   text-transform:capitalize;
+   color:#C8CCE1;
+}
+#TB_window div.info-msg{
+    clear:both;
+    width:430px;
+    margin:0px 0px -16px 12px;
+    padding:5px 0pt 5px 22px;
+    font-size:11px;
+}
+#TB_window div.info-msg span.click-genres-links a{
+    color:#8fc1e7;
+   border-bottom:1px solid #8fc1e7;
+}
+#TB_window div.info-msg span.click-genres-links a:hover{
+    border-bottom:none;
+}
+/* sample style is begin */
+#TB_window div.top-round-content{
+    background:transparent;
+    margin:-14px 0px 0px 0px;
+}
+#TB_window div.top-round-content div.left {
+	background:transparent url(../img/thickbox-images/tlc.png) no-repeat scroll 0% 0%;
+    width:14px;
+	height:14px;
+	float:left;
+}
+#TB_window div.top-round-content div.middle{
+	background:#fff;
+	float:left;
+	height:14px
+}
+#TB_window div.top-round-content  div.right {
+	background:transparent url(../img/thickbox-images/trc.png) no-repeat scroll 100% 0%;
+	width:14px;
+	height:14px;
+	float:left
+}
+#TB_window div.bottom-round-content{
+    background:transparent;
+    height:14px;
+    position:absolute;
+    margin:0px;
+}
+#TB_window .bottom-round-content div.left {
+	background:transparent url(../img/thickbox-images/blc.png) no-repeat scroll 0% 100%;
+	width:14px;
+	float:left;
+	height:14px;
+}
+#TB_window .bottom-round-content div.middle{
+	background:#fff;
+	float:left;
+    height:14px;
+}
+#TB_window .bottom-round-content div.right {
+	background:transparent url(../img/thickbox-images/brc.png) no-repeat scroll 100% 100%;
+	width:14px;
+	float:left;
+	height:14px
+}
+div#TB_window span.admin-cancel-links{
+    margin:-38px 37px 0px 0px;
+}
+div#TB_window  form.admin-form div.checkbox label{
+    margin:0px 0px 0px -83px;
+    width:100px;
+    text-align:left;
+    padding:0px 0px 0px 5px;
+}
+div#TB_window  form.admin-form div.checkbox input{
+    margin:0px 0px 0px 12px;
+}
+div#TB_window div#whyjoin p.home-join-text{
+    width:460px;
+}
+div#TB_window #TB_iframeContent{
+padding:0px 0px 0px 10px;
+}
+div#TB_window form.account div.else-where-input div.input input,div#TB_window form.account div.else-where-input div.input textarea{
+margin:0px 0pt 13px 0px;
+}
+*+html div#TB_window form.account div.else-where-input div.input input,*+html  div#TB_window form.account div.else-where-input div.input textarea{
+margin:3px 0pt 13px 0px;
+}
+div#TB_window div.else-where-links{
+width:55px;
+margin:0px 0px 6px 0px;
+}
+div#TB_window form#UserLinkEditForm div.submit{
+margin:10px 0px 0px 10px;
+}
+div#TB_window form#UserLinkEditForm a.custom-link-add{
+margin:6pt 0pt 0pt 105px;
+color:#8fc1e7;
+}
+div#TB_window form#UserLinkEditForm{
+margin:10px 0px 0px 50px;
+}
+*+html div#TB_window form#UserLinkEditForm div.textarea label{
+clear:both;
+margin:10px 0px 0px 0px;
+padding:20px 0px 0px 0px;
+}
+div#TB_window div#profile-image,div#TB_window ul#profile-select-color-image ,div#TB_window div#color-picker,div#TB_window div#select-image {
+width:660px;
+}
+div#TB_window div.user-account-info{
+border-bottom:none;
+}
+div#TB_window div.profilebgImages {
+    width:625px;
+    margin:0px 0px 0px 15px;
+  
+}
+div#TB_window h3.account-type{
+    margin:10px 0px 0px 0px
+}
+div#TB_window div.custom-userlinks div.custom-userlinks div.input{
+    margin:0px 0px 0px 55px
+}
+div#TB_window li div.custom-userlinks a.managesidebar-remove-links{
+    position:absolute;
+    margin:-26px 0px 0pt 278px;
+    color:#8fc1e7;
+}
+div#TB_window div.else-where-input a.managesidebar-remove-links{
+    margin:-35px 33px 0pt 0pt;
+    color:#8fc1e7;
+}
+div#TB_window li.your-custom-userlink-form a.removes-instrumentlink{
+    color:#8fc1e7;
+    position:absolute;
+    margin:11px 0px 0px 0px;
+}
+div#TB_window li.your-custom-userlink-form input{
+    background:#FFFFFF url(../img/bg-input.png) repeat-x scroll 0pt 100%;
+    border:1px solid #B2B2B2;
+    font-size:11px;
+    height:17px;
+    padding:2px 5px;
+    width:201px;
+    margin:8px 8px 5px 56px;
+}
+div#TB_window form.profile div.photo-cnt {
+	float:left;
+    margin:10px 0pt 10px 15px;
+    width:347px;
+}
+div#TB_window form#frmUpload2 div.action div.submit{
+    margin:-30px 0px 0px 59px;
+}
+div#TB_window div.account-images {
+    float:left;
+    margin:13px 0px 0px 37px;
+    width:216px;
+}
+div#TB_window div#color-picker form#frmUpload2 div.action div.submit{
+    margin:191px 0pt 0pt 50px;
+}
+div#TB_ajaxContent div.sidebar-box-center-about{
+    margin:0px 0px 0px 20px;
+}
+div#TB_window  form.profile div.action{
+    margin:20px 0px 0px 0px;
+}
+div#TB_window  form.profiles div.action input{
+    font-size:12px;
+    margin:0px 0px 0px  10px;
+  	background:transparent url(../img/add_btn.png) repeat-x scroll 0pt 100%;
+	border:medium none;
+	height:22px;
+	margin:10px 0px 0px 475px;
+	padding:0pt;
+	width:82px;
+	color:#fff;
+}
+
+div#TB_window  div.switch-links{
+    float:left;
+    width:85px;
+    margin:15px 0px 0px 0px;
+    height:22px;
+}
+div#TB_window  div.switch-links a{
+  background:transparent url(../img/add_btn.png) no-repeat scroll 0pt 100%;
+    color:#FFFFFF;
+    display:block;
+    height:19px;
+    margin:0px 0px 22px;
+    padding:3px 0px 0px 19px;
+    width:70px;
+}
+div#TB_window  div#switch-links a{
+    padding:3px 0px 0px 29px;
+    width:53px;
+}
+div.swicth-block-info{
+    float:right;
+}
+div#TB_window p.home-join-header{
+    margin:10px 0pt 0pt 15px;
+}
+ div.license-block{
+    padding:20px 0px 0px 10px;
+}
+  div.license-links{
+    float:left;
+    margin:10px 0px 0px 10px;
+    width:152px;
+}
+ div.license-info{
+    float:left;
+    width:560px;
+}
+div.license-info iframe{
+    border:1px solid #ccc;
+    width:550px;
+    height:340px;
+}
+div#TB_window div.license-links ul li a{
+    color:#8FC1E7;
+    font-family:arial;
+    font-size:12px;
+    text-decoration:none;
+}
+div.license-links ul li{
+    list-style-type:square;
+    margin:10px 0px 10px 0px;
+}
+div#TB_window  div#genres-title-info{
+    padding:30px 0px 10px 0px;
+}
+div#TB_window .import_error{
+margin:10px 0px 20px 20px;
+}

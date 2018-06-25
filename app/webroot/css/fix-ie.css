@@ -1,0 +1,43 @@
+.bottom {
+
+	padding-top:20px;
+
+}
+
+.bottom ul {
+
+	top:20px !important;
+
+}
+
+#fieldset-tagsearch input {
+
+	position: relative;
+	top:10px;
+
+}
+
+#fieldset-tagsearch button {
+
+	top:25px;
+	
+}
+
+.coupons ul li p {
+
+	line-height:12px;
+	font-size:7pt;
+
+}
+
+.coupons ul li p.desc {
+
+	margin-top:15px;
+
+}
+
+.coupons ul li a.copy {
+
+	margin-top:-17px;
+
+}

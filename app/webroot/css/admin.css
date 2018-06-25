@@ -1,0 +1,1382 @@
+/* $Id:admin.css 187 2011-12-08 23:39:20Z josephine_065at09 $ */
+/* common style is begin */
+div.admin-content {
+    font-size:100%;
+    color:#545454;
+    line-height:123%;
+	font-family:Arial;
+}
+div.admin-content #header{
+    height:141px;
+}
+div.admin-content #footer{
+    background: url("../img/admin-footer.png") repeat-x scroll left top transparent;
+    font-size: 12px;
+    height:26px;
+    padding: 9px 0 0 65px;
+}
+div.admin-content-block {
+    background:url(../img/admin-header.png) repeat-x left top;
+    width: 100%;
+}
+h1 {
+	margin:1px 0;
+	font-size:91%;
+}
+h1 a {
+	text-indent:1px;
+	background:none;
+	height:auto;
+	color:#fefefe;
+}
+h1 a:hover {
+	color:#B1B1B1;
+	text-decoration:none;
+}
+h1 a span {
+	font-weight:normal;
+	font-size:81%;
+	margin:0% 0% 0% 0.8%;
+}
+h2{
+    color: #0A0A0A;
+    font-size:144%;
+    padding: 7px 10px 7px 0;
+}
+div.dashboard-side2 h2 {
+    color: #FFFFFF;
+    font-size: 124%;
+    padding: 8px 5px 5px;
+}
+h3 {
+	color: #0A0A0A;
+    font-size: 112%;
+    font-weight: bold;
+    padding: 1% 0 0.8%;
+}
+
+h5 {
+	font-size:95%;
+	padding:0px 0 0 0px;
+}
+h5 a {
+	font-size:11px;
+}
+div.page-title-info h2 a,div#admin-footer a{
+    color:#fff;
+}
+div.page-title-info h2 a:hover,div#admin-footer a:hover{
+    text-decoration:underline;
+}
+div.admin-content div#main {
+    font-size: 75%;
+    margin:30px 0px;
+    min-height:465px;
+}
+div.admin-content p.paging-count{
+    color: #9F9F9F;
+    padding:10px 10px 10px 0;
+}
+div#users-admin_index div.admin-content p.paging-count{
+    padding:10px 0px;
+}
+
+div.dashboard-side2{
+    font-size:0.9em;
+}
+div.profile-image{
+    margin:0 0 0 151px;
+}
+div.page-info{
+    background: url("../img/alert-icon3.png") no-repeat scroll 10px center #FFF7D7;
+    border: 1px dashed #FFD97E;
+    color: #333333;
+    margin:0px;
+    padding: 10px 10px 10px 38px;
+}
+div.admin-content form.normal{
+    width:100%;
+    margin:0px;
+    padding:0px;
+}
+/* link style is begin */
+div.add-block{
+    text-align:right;
+    padding:15px 0px 0px 0px;
+}
+a.unsuspend,a.clear-flag,a.add,a.delete,a.edit,a.password,a.export, a.suspend, a.flag, a.pending, a.view, a.approve, a.network-ip {
+	background:url(../img/admin-sprite.png) 0 -704px no-repeat;
+	padding:1px 0 1px 20px;
+	margin-right:16px;
+}
+a.unsuspend{
+    background-position:-4px -5661px;
+}
+a.clear-flag{
+	background-position:-3px -5579px;
+}
+a.network-ip {
+	background-position: 0 -4663px; 
+}
+a.delete {
+	background-position: 0 -770px; 
+}
+a.edit {
+	background-position:0 -835px;
+}
+a.password {
+	background-position: 0 -1100px;
+}
+a.export {
+	background-position: 0 -902px;
+}
+a.suspend {
+	background-position: 0 -1354px;
+}
+a.flag {
+	background-position: 0 -968px;
+}
+a.pending{
+    background-position: 0 -2350px;
+}
+a.view{
+	background-position: 0 -2408px;
+}
+a.approve{
+	 background-position: 0 -2288px;
+}
+/* sort */
+a.asc {
+	background:transparent url(../img/icon-sort-down.gif) no-repeat scroll right center;
+}
+a.desc {
+	background:transparent url(../img/icon-sort-up.gif) no-repeat scroll right center;
+}
+a.asc,a.desc {
+	padding-right:10px;
+	margin-right: 10px;
+}
+.facebook a,.twitter a,.open-id-thumb a,.open-id-yahoo-thumb a,.open-id-gmail-thumb a, .twitter-link {
+	padding:2px 2px 2px 20px;
+}
+.facebook a, .facebook-link {
+	background:url(../img/icon-login-facebook.png) no-repeat left center;
+	padding:5px 5px 5px 35px;
+}
+.twitter a, .twitter-link {
+	background:url(../img/icon-twitter.png) no-repeat left center;
+}
+.open-id-thumb a {
+	background:transparent url(../img/icon-open-id.png) no-repeat left top;
+}
+.open-id-yahoo-thumb a {
+	background:transparent url(../img/icon-yahoo-open-id.png) no-repeat left top;
+}
+.open-id-gmail-thumb a {
+	background:transparent url(../img/icon-gmail-open-id.png) no-repeat left top;
+}
+/* round corner style is begin */
+div.admin-center-block {
+	border:1px solid #e9e9e9;
+	padding:10px;
+	border-top:none;
+	background:#fff;
+	margin:0px 0px 10px 0px;
+}
+div.admin-side1-tc {
+    background: url("../img/footer-bg-admin.png") repeat-x scroll left top;
+}
+div.dashboard-side2 div.admin-side1-tc {
+    height:34px;
+}
+/* top menu style is begin */
+ul.admin-menu {
+	float:right;
+	width:auto;
+}
+ul.admin-menu>li {
+    float: left;
+    margin:1px 5px 0 4px;
+}
+ul.admin-menu li a {
+   color:#b1b1b1;
+    font-size: 73%;
+}
+ul.admin-menu li.view-site a, ul.admin-menu li.logout a, ul.admin-menu li:hover a, ul.admin-menu li.active a {
+	color:#fff;
+}
+ul.admin-menu li.view-site a:hover, ul.admin-menu li.logout a:hover {
+	color:#afafaf;
+}
+ul.admin-menu li.view-site {
+	margin:1px 18px 0 11px;
+}
+/* admin menu style is begin */
+ul.admin-links {
+	margin:10px 0px;
+	padding:0% 0% 0.5% 0%;
+	font-size:90%;
+}
+ul.admin-links > li {
+    float: left;
+    font-size: 81%;
+    margin: 0 0.5%;
+    position: relative;
+    width: 10.5%;
+    z-index: 10000;
+}
+ul.admin-links>li.subscriptions {
+	width:9.5%;
+}
+ul.admin-links li span {
+    cursor: pointer;
+    display: block;
+    height: 94px;
+    position: relative;
+    z-index: 10000;
+}
+ul.admin-links li span.sub-link-info {
+	height:auto;
+	color:#4c4c4c;
+	font-size:10px;
+	float:right;
+}
+ul.admin-links li span.sub-link-info a{
+    background:url("../img/admin-sprite.png") no-repeat scroll -4px -5381px transparent;
+}
+ul.admin-links li div.admin-sub-block ul li.sub-link span.sub-link-info  a {
+     padding: 0 0 0 21px;
+}
+span.menu-center {
+	color:#fff;
+	font-size:90%;
+	font-weight:bold;
+}
+span.home {
+    background: url("../img/admin-menu-sprite.png") no-repeat center -131px;
+}
+span.users {
+	background: url("../img/admin-menu-sprite.png") no-repeat center -268px;
+}
+span.sightings {
+	background: url("../img/admin-menu-sprite.png") no-repeat center -975px;
+}
+span.items {
+	background:url("../img/admin-menu-sprite.png") no-repeat center -411px;
+}
+span.settings {
+	background:url("../img/admin-menu-sprite.png") no-repeat scroll center -833px;
+}
+span.settings1 {
+    background: url("../img/admin-menu-sprite.png") no-repeat center -1105px;
+}
+span.places {
+	background: url("../img/admin-menu-sprite.png") no-repeat center -694px;
+}
+span.guides {
+	background:url("../img/admin-menu-sprite.png") no-repeat center 10px;
+}
+span.masters {
+	background: url("../img/admin-menu-sprite.png") no-repeat center -551px;
+}
+span.tools{
+	background: url("../img/admin-menu-sprite.png") no-repeat center -1235px;
+}
+div.page-title-info h2{
+    padding: 8px 0 6px 35px;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+h2.sitestats-title{
+    background:url("../img/admin-sprite.png") no-repeat scroll 6px -629px transparent;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+h2.users-title{
+   background:url("../img/admin-sprite.png") no-repeat scroll 16px -2222px transparent;
+}
+h2.coupons-title{
+   background:url("../img/admin-sprite.png") no-repeat scroll 10px -1746px transparent;
+}
+h2.stores-title{
+   background:url("../img/admin-sprite.png") no-repeat scroll 8px -1610px transparent;
+}
+h2.subscriptions-title{
+   background:url("../img/admin-sprite.png") no-repeat scroll 10px -1543px transparent;
+}
+div.page-title-info  h2.google_ads-title{
+   background:url("../img/admin-sprite.png") no-repeat scroll 9px -357px transparent;
+   padding:8px 0 6px 55px;
+}
+h2.settings-title{
+   background:url("../img/admin-sprite.png") no-repeat scroll 10px -1676px transparent;
+}
+h2.settings-title span.setting-info{
+   float:right;
+   margin:0 10px;
+   font-weight:normal;
+   font-size:11px;
+}
+h2.master-title{
+   background:url("../img/admin-sprite.png") no-repeat scroll 10px -1806px transparent;
+}
+h2.diagnostics-title{
+    background:url("../img/admin-sprite.png") no-repeat scroll 9px -5486px transparent;
+}
+ul.admin-links li.no-bor div.admin-sub-block {
+    left:0px;
+    top: 90px;
+}
+ul.admin-links>li span.amenu-right {
+	padding:0px 15px 0px 2px;
+	margin:0 0 0 9px;
+}
+ul.admin-links>li.admin-active span.amenu-left {
+	background:url(../img/admin-sprite.png) no-repeat 0 -72px;
+}
+ul.admin-links>li.admin-active span.amenu-right {
+	background:url(../img/admin-sprite.png) no-repeat right -218px;
+}
+ul.admin-links>li span.menu-center {
+	padding:10px 0 0px 0;
+	text-align:center;
+}
+ul.admin-links>li:hover span.amenu-left, ul.admin-links>li.admin-active:hover span.amenu-left {
+	background:url(../img/admin-sprite.png) no-repeat 0 -1881px;
+}
+ul.admin-links>li:hover span.amenu-right, ul.admin-links>li.admin-active:hover span.amenu-right {
+	background:url(../img/admin-sprite.png) no-repeat right -2025px;
+}
+ul.admin-links>li span.menu-center em {
+    display: block;
+    font-size:1.2em;
+    font-style: normal;
+    font-weight: normal;
+    padding: 52px 0 0;
+}
+ul.admin-links>li:hover span.menu-center em,ul.admin-links>li.admin-active span.menu-center em{
+    color:#fff;
+}
+ul.admin-links li div.admin-sub-block {
+	position:absolute;
+	width:287%;
+	z-index:1;
+	display:none;
+	width:230px;
+	background:url("../img/bg-menu.png") repeat scroll right top transparent;
+}
+ul.admin-links li.masters-block div.admin-sub-block {
+	width:384px;
+}
+ul.admin-links li.setting-masters-block div.admin-sub-block {
+	width:416px;
+}
+ul.admin-links li.setting-masters-block li.admin-sub-links-right {
+    margin: 0 0 0 15px;
+    width: 168px;
+}
+ul.admin-links li.setting-masters-block  li.admin-sub-links-left {
+    border-right: 1px solid #DDDDDD;
+    margin: 6px 0px 0px 0px;
+    width:190px;
+    padding:0px 5px 0px 0px;
+}
+ul.admin-sub-links li.admin-sub-links-left {
+	float:left;
+	width:165px;
+	margin:0px 18px 0px 0px;
+	border-right:1px solid #ddd;
+}
+ul.admin-sub-links li.admin-sub-links-right {
+	float:left;
+	width:160px;
+}
+ul.admin-links li.masters div.admin-sub-block {
+     right: -5px;
+    top:90px;
+}
+
+ul.admin-links li div.admin-sub-lblock {
+	background:url(../img/menu-left-repeat.png) repeat-y top left;
+}
+ul.admin-links li div.admin-sub-rblock {
+	background:url(../img/menu-right-repeat.png) repeat-y top right;
+}
+ul.admin-links li div.admin-sub-cblock {
+	background:#84010F;
+	margin:0 6px 0 2px;
+}
+ul.admin-links li div.admin-bot-lblock {
+  background: url("../img/admin-sprite.png") no-repeat scroll left -2527px transparent;
+}
+ul.admin-links li div.admin-bot-rblock {
+  background: url("../img/admin-sprite.png") no-repeat scroll right -2570px transparent;
+}
+ul.admin-links li div.admin-bot-cblock {
+    background: url("../img/admin-sprite.png") repeat-x scroll left -2615px transparent;
+    height: 15px;
+    margin: 0 13px 0 10px;
+}
+ul.admin-links li:hover div.admin-sub-block {
+	display:block;
+}
+ul.admin-links li div.admin-sub-block ul {
+	margin:3px 0px 0px 0px;
+	padding:10px;
+	border-top:1px solid #b4616a;
+}
+ul.admin-links li div.admin-sub-block ul li.merchant-info a, ul.admin-links li div.admin-sub-block ul li.merchant-info span {
+	display:inline;
+}
+ul.admin-links li div.admin-sub-block ul ul {
+	border-top:none;
+	padding:0px;
+}
+ul.admin-links li div.admin-sub-block ul h4 {
+    color: #FEFEFE;
+    font-size:12px;
+    font-weight: 700;
+    padding: 4px 0 0;
+}
+ul.admin-links li div.admin-sub-block ul h4.setting-title {
+	text-align:center;
+}
+ul.admin-links li div.admin-sub-block ul li a {
+    color: #B7B7B7;
+    display: block;
+    padding: 2px 0;
+    text-decoration: none;
+}
+ul.admin-links li div.admin-sub-block ul li.sub-link a{
+    float:left;
+}
+ul.admin-links li div.admin-sub-block ul li a:hover {
+    color: #FEFEFE;
+ }
+ul.admin-links li div.admin-sub-block ul li.setting-overview a {
+	padding:3px 10px 3px 30px;
+	background:url("../img/admin-sprite.png") no-repeat scroll 7px -1681px transparent;
+}
+ul.admin-links li div.admin-sub-block ul li.setting-overview a:hover {
+	background:url("../img/admin-sprite.png") no-repeat scroll 7px -3111px #fff;
+	color:#000;
+}
+ul.admin-links li div.admin-sub-block ul li.customize-subscription a {
+	background:url("../img/admin-sprite.png") no-repeat scroll -4px -1445px transparent;
+}
+ul.admin-links li div.admin-sub-block ul li.setting-overview1 a {
+	float:right;
+	font-weight:bold;
+}
+ul.admin-links li div.admin-sub-block ul li.customize-subscription a:hover {
+	background:#E5F6F9 url("../img/admin-sprite.png") no-repeat scroll -4px -1445px;
+}
+.admin-sub-links-left,.admin-sub-links-right{
+    float:left;
+    width:174px;
+}
+/* filter style */
+span.system-flagged,span.flagged,span.suspended,span.unreliablel-coupon,span.affiliate-coupon-6,span.affiliate-coupon-7,.active-coupon,span.special-coupon,span.unreliable-coupon,span.partner,span.couponcode-coupon,span.shopping-coupon,span.printable-coupon,span.free-coupon,span.new-coupon,span.affiliate-coupon-2,span.affiliate-coupon-1,span.affiliate-coupon-3,span.affiliate-coupon-4,span.affiliate-coupon-5,span.rejected-store,span.check-store,span.rejected-coupon,span.manual-store,span.auto-store,span.outdated-coupon,span.actives-coupon,span.rejected-store {
+	color:#FFFFFF;
+	float:left;
+	margin:2px 3px 2px 0;
+	padding:2px 5px;
+	text-align:center;
+	line-height:12px;
+	font-size:11px;
+}
+table.list td.status-col span {
+	margin:2px 20px;
+}
+span.system-flagged{
+    background:#32A3E5;
+}
+span.flagged{
+    background:#8ECDF2;
+}
+span.suspended{
+    background:#B7B5B5;
+}
+span.unreliablel-coupon{
+	background:#6DC699;
+}
+span.active-coupon {
+	background:#009900;
+}
+span.special-coupon {
+	background:#c6929e;
+}
+span.unreliable-coupon {
+	background:#6DC699;
+}
+span.partner {
+	background:#F52887;
+}
+span.couponcode-coupon {
+	background:#a48860;
+}
+span.shopping-coupon {
+	background:#330690;
+	margin:0 3px 0 0;
+}
+span.printable-coupon {
+	background:#0A33c0;
+}
+span.free-coupon {
+	background:#5b6763;
+}
+span.affiliate-coupon-1 {
+	background:#6597E4;
+}
+span.affiliate-coupon-2 {
+	background:#663300;
+}
+span.affiliate-coupon-3 {
+	background:#990066;
+}
+span.affiliate-coupon-4 {
+    background:#900020;
+}
+span.affiliate-coupon-5 {
+	background:#5b6763;
+}
+span.affiliate-coupon-6 {
+    background:#929292;
+}
+span.affiliate-coupon-7 {
+	background:#1257F9;
+}
+span.check-store {
+	background:#842DCE;
+}
+span.new-coupon {
+	background:#7E354D;
+}
+span.auto-store {
+	background:#F4A460;
+}
+span.manual-store {
+	background:#3CB371;
+}
+span.rejected-coupon {
+	background:#50EBEC;
+}
+span.outdated-coupon {
+	background:#4E8975;
+}
+span.actives-coupon {
+	background:#806517;
+}
+span.rejected-store {
+	background:#A0C544;
+}
+ul.verification li a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 13px;
+    padding: 3px 4px;
+}
+ul.verification li {
+	float:left;
+	margin: 5px 10px 0 0;
+}
+td.coupon-status-info span.coupon-status-info{
+    -moz-border-radius: 0 0 0 0;
+    display: block;
+    float: left;
+    height: 10px;
+    margin: 5px 5px 0 0;
+    padding: 0;
+    text-indent: -3000em;
+    width: 10px;
+}
+/* settings links style is begin */
+ul.setting-links {
+    margin: 1% 0 0 2%;
+}
+ul.setting-links li {
+    border-bottom: 1px solid #DDDDDD;
+    margin: 0 1% 0 0;
+    min-height: 52px;
+    padding: 1% 0;
+}
+ul.setting-links li:hover{
+    background:#FFF7FB;
+}
+ul.setting-links li div.setting-details-info {
+    min-height: 75px;
+    padding: 0 0 29px 83px;
+}
+ul.setting-links li div.debug-error {
+    background:url("../img/admin-sprite.png") no-repeat scroll 15px -2966px transparent;
+}
+ul.setting-links li div.search-logs {
+    background:url("../img/admin-sprite.png") no-repeat scroll 19px -2707px transparent;
+}
+ul.setting-links li div.search-keywords {
+    background:url("../img/admin-sprite.png") no-repeat scroll 15px -2836px transparent;
+}
+ul.setting-links li div.setting-category-1{
+    background:url("../img/admin-sprite.png") no-repeat scroll 12px -3221px transparent;
+}
+ul.setting-links li div.setting-category-2{
+    background:url("../img/admin-sprite.png") no-repeat scroll 0px -3357px transparent;
+}
+ul.setting-links li div.setting-category-3{
+    background:url("../img/admin-sprite.png") no-repeat scroll 6px -3539px transparent;
+}
+ul.setting-links li div.setting-category-4{
+    background:url("../img/admin-sprite.png") no-repeat scroll 6px -3699px transparent;
+}
+ul.setting-links li div.setting-category-5{
+    background:url("../img/admin-sprite.png") no-repeat scroll 6px -3840px transparent;
+}
+ul.setting-links li div.setting-category-6{
+    background:url("../img/admin-sprite.png") no-repeat scroll 10px -3967px transparent;
+}
+ul.setting-links li div.setting-category-8{
+    background:url("../img/admin-sprite.png") no-repeat scroll 6px -4104px transparent;
+}
+ul.setting-links li div.setting-category-9{
+    background:url("../img/admin-sprite.png") no-repeat scroll 6px -4397px transparent;
+}
+ul.setting-links li div.setting-category-10{
+    background:url("../img/admin-sprite.png") no-repeat scroll 6px -4267px transparent;
+}
+ul.setting-links li div.setting-category-7{
+    background:url("../img/admin-sprite.png") no-repeat scroll 14px -4863px transparent;
+}
+/* http://www.visakopu.net/misc/table-border-css/ */
+/** table-list */
+table.list,table.list td,table.list th {
+	border:1px solid #E5EAED;
+}
+table.list {
+	border-width:5px;
+	border-spacing:0;
+	border-collapse:collapse;
+	margin:10px auto;
+	width:100%;
+}
+table.list td,table.list th {
+	margin:0;
+	padding:7px 7px;
+	border-width:1px;
+	background-color:#fff;
+	vertical-align:middle;
+	text-align:center;
+	color:#333333;
+	line-height:18px;
+}
+table.list th {
+	color:#545454;
+	font-weight:bold;
+	padding:12px 10px;
+	background:url(../img/table-bg.png) repeat-x left bottom #fff;
+}
+table.list th,table.list th a {
+	color:#545454;
+}
+table.list th a:hover {
+	color:#000;
+}
+table.list tr.altrow td {
+	background-color:#FCFCFC;
+}
+table.list tr.errorrow td {
+	background-color:#F25E5E;
+	color:#FFFFFF;
+}
+table.list tr.errorrow td a {
+	color:#FFFFFF;
+}
+table.list tr:hover td {
+	background:#FFEFF1;
+}
+table.list td.sub-title {
+	background:#fff;
+}
+table.list td.sub-title:hover+tr td {
+	background:green;
+	color:#fff;
+}
+.actions-block .actions a {
+	text-align:left;
+}
+table.list td.dl,table.list th.dl {
+	text-align:left;
+}
+table.list td.dr,table.list th.dr {
+	text-align:right;
+}
+table.list td.actions,table.list th.actions{
+    width:60px;
+}
+/* setting images page style begins */
+form.normal div.input input.image-settings {
+	width:100px;
+}
+form.normal div.outer-image-settings div.input {
+	width:310px;
+	float:left;
+}
+form.normal div.outer-image-settings div.input label {
+	position:absolute;
+}
+form.normal div.outer-image-settings div.input input {
+	margin:0px 0px 0px 200px;
+}
+form.normal div.outer-image-settings div.input input.image-settings-height {
+	margin:0px 0px 0px 0px;
+}
+form.normal div.outer-image-settings div.image-separator {
+	width:10px;
+}
+form.normal table.list div.checkbox input{
+    margin:0px;
+}
+
+div.admin-select-block a,div.admin-select-block span{
+    margin:0px 2px;
+}
+div.admin-content div.admin-select-block div {
+	float:left;
+	padding:0px;
+	margin:0px;
+}
+form.normal div.admin-select-block div.select select {
+	margin: 0 0 0 10px;
+    width:185px;
+}
+form.search-form div.submit{
+	float:left;
+}
+form.normal div.date-time label + select{
+	margin:0 0 0 5px;
+}
+/* action link style is begin */
+div.action-inner-block {
+	display:none;
+}
+span.action-information-block {
+	display:block;
+	height:47px;
+	width:52px;
+	padding:0px 0px 0px 0px;
+}
+div.action-block span.action-center-block {
+	padding:5px 0px 10px 0px;
+	display:block;
+}
+div.action-block:hover span.action-center-block {
+	position:relative;
+	z-index:10000;
+}
+div.action-block span.action-left-block {
+	height:9px;
+	display:block;
+}
+div.action-block:hover span.action-left-block {
+	background:url(../img/admin-sprite.png) no-repeat 0 -2169px;
+}
+div.action-block:hover span.action-center-block {
+	background:transparent url(../img/admin-action-center.png) repeat-y left top;
+}
+span.action-info {
+	display:block;
+	width:22px;
+	height:24px;
+	text-indent:-9999em;
+	background:url(../img/admin-sprite.png) no-repeat 0 0;
+	margin:0px auto;
+	z-index:10000;
+}
+div.action-block div.action-inner-block {
+	display:none;
+	position:absolute;
+	width:300px;
+	z-index:1000;
+	background:url(../img/bg-menu.png) repeat right top transparent;
+}
+*+html div.action-block div.action-inner-block {
+	margin:0px 0px 0px -26px;
+}
+div.action-block:hover div.action-inner-block {
+	display:block;
+}
+div.action-block div.action-inner-left-block {
+	background:transparent url(../img/admin-action-c1.png) repeat-y left top;
+	padding:0px 0px 10px 0px;
+}
+div.action-block:hover div.action-bottom-block {
+	background:url(../img/over-bot.png) no-repeat 0 0;
+	height:7px;
+	width:300px;
+}
+div.action-block:hover ul.action-link {
+	border-top:1px solid #e6687e;
+	padding:10px 0px 0px 0px;
+	margin:0px 6px 0px 0px;
+}
+ul.action-link li {
+	float:left;
+	width:140px;
+	text-align:left;
+    padding: 4px 0 4px 7px;
+	min-height:21px;
+}
+ul.action-link li.coupon_status{
+    float: left;
+    width: 284px;
+}
+div#cities-admin_index ul.action-link {
+	line-height:13px;
+}
+ul.action-link a {
+	display:block;
+	padding:3px 0px 3px 20px;
+	border:1px solid #fff;
+}
+ul.action-link a:hover {
+	color:#000;
+	border:1px solid #F7A8B0;
+}
+/** admin side filter list */
+ul.filter-list {
+	margin:10px 0 0 0;
+	padding: 0 0 10px;
+    border-bottom: 1px solid #DDDDDD;
+}
+ul.filter-list li {
+	float:left;
+	padding:0 8px 0 0;
+	border-left:1px solid #DDD;
+}
+ul.filter-list li:first-child{
+	border-left:none;
+}
+ul.filter-list li:hover, ul.filter-list li.active{
+	background:#f9f9f9;
+}
+ul.filter-list li a {
+	padding: 6px 14px;
+}
+ul.filter-list li a {
+	color:#000;
+}
+ul.filter-list li span {
+    float: left;
+    margin: 2px 0;
+    padding: 3px;	
+	background:none;
+	text-align:left;
+}
+ul.filter-list li span a{
+	font-size: 18px;
+    line-height: 18px;	
+	display:block;
+}
+ul.filter-list li span a span{
+	float:none;
+	display:block;
+	color: #B1B1B1;
+	font-size: 10px;
+	line-height: 10px;	
+}
+ul.filter-list li span.active a  {
+	color:#53a007;
+}
+ul.filter-list li span.inactive a {
+	color:#c1c1c1;
+}
+ul.filter-list li span.featured a{
+	color:#00b9ae;
+}
+ul.filter-list li span.not-featured a {
+	color:#619996;
+}
+ul.filter-list li span.site a {
+	color:#c47fff;
+}
+ul.filter-list li span.openid a {
+	color:#F4962E;
+}
+ul.filter-list li span.facebook a {
+	color:#4E68A1;
+}
+ul.filter-list li span.twitter a {
+	color:#79D2F1;
+}
+ul.filter-list li span.gmail a {
+	color:#D1320D;
+}
+ul.filter-list li span.yahoo a {
+	color:#832583;
+}
+ul.filter-list li span.total a {
+	color:#131717;
+}
+ul.filter-list li span.suspend a {
+	color:#af6700;
+}
+ul.filter-list li span.flagged a {
+	color:#e6305f;
+}
+ul.filter-list li span.special-coupon a {
+	color:#C6929E;
+}
+ul.filter-list li span.unreliable-coupon a {
+	color:#6DC699;
+}
+ul.filter-list li span.check-store a {
+	color:#842DCE;
+}
+ul.filter-list li span.new-coupon a {
+	color:#7E354D;
+}
+ul.filter-list li span.actives-coupon a {
+	color:#806517;
+}
+ul.filter-list li span.rejected-store a {
+	color:#A0C544;
+}
+ul.filter-list li span.rejected-coupon a {
+	color:#50EBEC;
+}
+ul.filter-list li span.outdated-coupon a {
+	color:#4E8975;
+}
+ul.filter-list li span.shopping-coupon a {
+	color:#330690;
+}
+ul.filter-list li span.couponcode-coupon a {
+	color:#A48860;
+}
+ul.filter-list li span.printable-coupon a {
+	color:#0A33C0;
+}
+ul.filter-list li span.free-coupon a {
+	color:#5B6763;
+}
+ul.filter-list li span.affiliate-coupon-1 a {
+	color:#6597E4;
+}
+ul.filter-list li span.affiliate-coupon-2 a {
+	color:#663300;
+}
+ul.filter-list li span.affiliate-coupon-3  a{
+	color:#990066;
+}
+ul.filter-list li span.affiliate-coupon-4 a {
+    color:#900020;
+}
+ul.filter-list li span.affiliate-coupon-5 a {
+	color:#5b6763;
+}
+ul.filter-list li span.affiliate-coupon-6 a {
+    color:#929292;
+}
+ul.filter-list li span.affiliate-coupon-7 a {
+	color:#1257F9;
+}
+/* admin dashboard style is begin */
+div.admin-dashboard-links p{
+     background:url("../img/admin-sprite.png") no-repeat scroll 0 -4572px transparent;
+     padding:2px 0 2px 12px;
+     margin:0px 0px 1px 0px;
+}
+div.admin-dashboard-links {
+  color: #8F8F8F;
+}
+div.admin-dashboard-links p small{
+    color:#000;
+}
+h4.version-info{
+    font-weight:bold;
+    padding:10px 0px;
+}
+span.mceEditor{
+    display:block;
+    margin:35px 0 0;
+}
+/* search form style is begin*/
+form.search-form{
+    padding:0px;
+}
+form.search-form div.select,form.search-form div.text {
+   float: left;
+    margin:6px 8px 6px 0px;
+    padding: 0 5px;
+    width:212px;
+}
+form.search-form div.select{
+    width:150px;
+}
+form.search-form div.input label {
+    font-size: 12px;
+    padding:0;
+    text-align: left;
+    width: 59px;
+    color:#8F8F8F;
+}
+form.search-form div.select label{
+    width:31px;
+    margin:3px 0px 0px 0px;
+}
+form.search-form div.user-select label{
+    width:67px;
+}
+
+form.search-form div.text input,form.search-form div.select select {
+    margin: 0 5px 0 62px;
+    padding: 5px 2px;
+    width: 146px;
+}
+form.search-form div.select select{
+    width:111px;
+    margin:0 0 0 46px;
+}
+form.search-form div.user-select select{
+    margin:0px 0px 0px 75px;
+}
+form.search-form div.user-select{
+    width:178px;
+}
+form.search-form div.submit-block {
+	margin: 0 0 5px 0px;
+	padding:0px;
+	float: left;
+}
+/* action  tabel-row style is begin */
+table.list tr th.select,table.list tr td.select{
+    width:50px;
+}
+table.list tr.active-row td {
+	background:#fff url(../img/table-active-bg1.png) repeat-x left bottom;
+	color:#000;
+	border:none;
+	position:relative;
+	padding:4px 4px 10px 4px;
+}
+table.list tr.expand-row td {
+	cursor:pointer;
+}
+table.list tr.active-row, table.list tr.active-row td {
+	border:none;
+}
+table.list tr.active-row td a {
+	color:#000;
+}
+table.list tr.active-row td a:hover {
+	color:#fff;
+}
+table.list tr:hover td.action-block, table.list td.action-block {
+   background: none repeat scroll 0 0 #FFF3F4;
+    border-bottom: 2px solid #FCE3E5;
+    border-top: medium none;
+    font-size: 102%;
+    text-align: left;
+}
+div.action-info-block {
+	background:transparent url(../img/action-separator.png) repeat-y 18.4% top;
+	font-size:1em;
+}
+div.action-right,div.action-right4,div.action-left-block, div.action-right-block {
+	float:left;
+}
+div.action-left-block ul li {
+	margin:8px 0px 5px 0px;
+}
+div.action-left-block {
+    margin: 0 27px 0 18px;
+    width: 16%;
+}
+div.action-right-block {
+	width:58%;
+}
+div.action-right{
+    margin: 0 25px 0 0;
+    width: 41%;
+}
+div.action-right4{
+	width:20%;
+}
+div.action-info-block h3 {
+	font-size:11px;
+	color:#BD2031;
+	border-bottom:1px solid #FCA9B1;
+	padding:5px 0px;
+	margin:5px 0px 15px 0px;
+}
+div.action-right-block dl dt, div.action-right-block dl dd {
+	min-height:25px;
+	float:left;
+}
+div.action-right-block dl dt {
+	width:60%;
+	font-weight:bold;
+	font-size:1em;
+}
+div.action-right-block dl dd {
+	width:33%;
+	font-size:1em;
+}
+div.action-right1  dl dt{
+    width:30%;
+}
+div.action-right1  dl dd{
+    width:70%;
+}
+div.action-right4 dl dt {
+	font-weight:normal;
+	width:48%;
+}
+div.city-action{
+    margin:15px 0px 0px 0px;
+}
+div.action-right-block div.city-action dl dt{
+    width:8%;
+    color:#BD2031;
+}
+div.action-right-block div.city-action dl dd{
+    width:92%
+}
+div.store-img-block {
+    width: 166px;
+}
+div.store-img-block img{
+    width:100%;
+    height:100%;
+}
+div.info-details {
+  background: url("../img/icon-info-details.png") no-repeat scroll 10px 3px #FDFDFD;
+    border-bottom: 1px solid #DDDDDD;
+    border-top: 1px solid #DDDDDD;
+    margin: 10px;
+    padding: 9px 10px 10px 54px;
+}
+div.page-submit-block div.submit,div.page-submit-block div.cancel-block{
+    float:left;
+    margin:0px 5px 0px 0px;
+}
+form.normal div.page-submit-block div.cancel-block a{
+    padding:9px 10px 0 0;
+    height:30px;
+}
+form.normal div.page-submit-block div.cancel-block a:hover{
+    color:#000;
+}
+form.normal div.date-time-block label{
+    float: left;
+    margin: 0;
+    padding: 0 12px 0 0;
+    position: static;
+}
+div.date-time-block div.datepicker-container{
+    margin:0px;
+    float:left;
+}
+div.date-time-block div.datepicker-container{
+    z-index:2;
+}
+div.date-time-block+div.date-time-block div.datepicker-container{
+    z-index:1;
+}
+span.update-status-info{
+	float:right;
+}
+span.update-status-info a{
+	 background:url("../img/admin-sprite.png") no-repeat scroll 0 -4773px transparent;
+	 display:block;
+	 padding:0 0 0 20px;
+}
+table.list tr.inactive-record td a, table.list tr.inactive-record td span.email-not-comfirmed, table.list tr.inactive-record td  {
+    color: #B7B7B7;
+}
+/*  dashbrad round corner style is begin */
+div.chart-half-section {
+	float: left;
+	margin: 10px 0.5% 4px 0.6%;
+	width: 48.8%;
+}
+div.admin-dashboard-chart, div.admin-dashboard-edu-chart, div.admin-dashboard-coupon-usage-chart {
+    float: left;
+    height: 375px;
+    width: 100%;
+}
+h2.chart-dashboard-title {
+    position: relative;
+}
+h2.chart-dashboard-title span {
+    cursor: pointer;
+    display: block;
+    height: 36px;
+    left: 0;
+    margin: 1px 10px;
+    position: absolute;
+    top: 0;
+    width: 98%;
+    text-indent:-3000em;
+}
+h2.chart-dashboard-title span.up-arrow {
+    background:url("../img/admin-sprite.png") no-repeat scroll 112% -5335px transparent;
+}
+h2.chart-dashboard-title span.down-arrow {
+    background:url("../img/admin-sprite.png") no-repeat scroll 112% -5285px transparent;
+}
+div.dashboard-tl {
+	background:url("../img/admin-sprite.png") no-repeat scroll 0 -5814px;
+}
+div.dashboard-tr {
+	background:url("../img/admin-sprite.png") no-repeat scroll right -5823px;
+}
+div.dashboard-tc {
+	background:url("../img/admin-sprite.png") repeat-x scroll left -5768px;
+	height:9px;
+	margin:0px 11px;
+}
+div.dashboard-cl {
+	background:transparent url(../img/dashboard-cl.png) repeat-y left top;
+}
+div.dashboard-cr {
+	background:transparent url(../img/dashboard-cr.png) repeat-y right top;
+}
+div.dashboard-cc {
+	background:#fff;
+	margin:0px 9px;
+}
+div.dashboard-bl {
+	background:url("../img/admin-sprite.png") no-repeat scroll left -5848px;
+}
+div.dashboard-br {
+	background:url("../img/admin-sprite.png") no-repeat scroll right -5874px;
+}
+div.dashboard-bc {
+	background:url("../img/admin-sprite.png") repeat-x scroll left -5787px;
+    height: 17px;
+    margin: 0 89px;
+}
+div.admin-content form.language-form {
+    float: right;
+}
+h2.chart-dashboard-title {
+    background: url("../img/admin-sprite.png") no-repeat scroll 10px -4504px;
+    color: #FFFFFF;
+    padding:9px 0 7px 35px;
+}
+.language-form label {
+    padding: 0 10px 0 0;
+}
+.form-block h3 {
+    border-bottom: 1px solid #ddd;
+    color: #454545;
+    font-size: 1.3em;
+    font-weight:bold;
+    margin: 0 10px 9px;
+    padding: 6px 0;
+}
+form.normal div.text input.disabled:focus, form.normal div.text input.disabled:hover, form.normal div.text input.disabled {
+    background: none repeat scroll 0 0 #F1F1F1;
+    border: 1px solid #F1F1F1;
+    color: #C5C4C4;
+}
+/* admin_user index page style is begin */
+div.user-info-block{
+    margin:0px 0px 5px 0px;
+}
+p.user-img-right span.affiliate {
+	background:#9bc937;
+	color:#fff;
+}
+p.user-img-right span.active-city {
+	background:#1E9B0A;
+	color:#fff;
+}
+p.user-img-right span.admin {
+	background:#fff830;
+	color:#4c4c4c;
+	padding:2px;
+}
+div.user-status-block span {
+	float:left;
+	display:block;
+	width:16px;
+	height:16px;
+	text-indent:-3000em;
+	padding:0px;
+}
+div.user-status-block span.flags {
+	margin:5px 3px;
+	width:19px;
+	height:11px;
+}
+div.user-status-block span.open-id {
+	background:url("../img/admin-sprite.png") no-repeat scroll -7px -5167px transparent;
+}
+div.user-status-block span.gmail {
+	background:url("../img/admin-sprite.png") no-repeat scroll 0 -1034px transparent;
+}
+div.user-status-block span.yahoo {
+	background:url("../img/admin-sprite.png") no-repeat scroll 0 -1486px transparent;
+}
+div.user-status-block span.facebook {
+	background:url("../img/admin-sprite.png") no-repeat scroll -4px -5061px transparent;
+}
+div.user-status-block span.twitter {
+	background:url("../img/admin-sprite.png") no-repeat scroll 0 -1420px transparent;
+}
+div.user-status-block span.foursquare {
+	background:url("../img/admin-sprite.png") no-repeat scroll -4px -4980px transparent;
+}
+div.user-status-block span.email {
+	text-indent:1px;
+	height:auto;
+	width:auto;
+	padding:1px 0px 3px 21px;
+}
+div.user-status-block span.email-not-comfirmed {
+	background:url("../img/admin-sprite.png") no-repeat scroll -1px -5100px transparent;
+	color: #666;
+}
+div.user-status-block span.email-comfirmed {
+	color:#000;
+	background:url("../img/admin-sprite.png") no-repeat scroll -5px -5246px transparent;
+}
+/* Js block style is begin */
+#js-expand-table div.arrow {
+    background: url("../img/hide-arrow.png") no-repeat scroll left 0 transparent;
+    float: left;
+    height: 6px;
+    margin:13px 0 0 0px;
+    width: 14px;
+}
+#js-expand-table tr.active-row div.arrow {
+    background: url("../img/show-arrow.png") no-repeat scroll left 0;
+}
+div#devs-admin_logs dl.list{
+    float:none;
+    width:auto;
+}
+div#devs-admin_logs dl.list dt{
+    width:130px;
+}
+div#devs-admin_logs dl.list dd{
+    width:84%;
+}
+div#devs-admin_logs textarea{
+    width:98%;
+    border:1px solid #ddd;
+}
+
+div.credentials-right a{
+	padding:2px 2px 2px 24px;
+	float:right;
+}
+div.credentials-right a.facebook-link {
+    background: url("../img/admin-sprite.png") no-repeat left -5058px;
+}
+div.credentials-right a.twitter-link {
+    background: url("../img/admin-sprite.png") no-repeat left -1416px;
+}

@@ -1,0 +1,488 @@
+/* 
+##  dreikelvin CSS Framework 4
+##  
+##  Author & Copyright: Robert Jung 2009
+##  URL: http://design.dreikelvin.de/
+##  
+##  CSS for "CouponDick"
+##
+##
+*/
+/* ## XHTML basis elements ############################ start # */
+
+body,html {
+	
+	margin:0;
+	padding:0;
+	height:100%;
+	
+}
+
+br { clear:both; }
+
+
+
+.hidden {  display:none;  }
+
+div, section, article, footer, header, nav {
+
+	margin:0;
+	padding:0;
+	float:none;
+	width:100%;
+	position:relative;
+	display:block;
+
+}
+
+a:active, a:focus { outline:none; }
+
+a img { border:none; }
+
+object { margin:0; padding:0; }
+
+/* ## HTML basis elements ############################ end ### */
+
+/* ## main elements ################################## start # */
+
+
+#index, #index a {  
+
+	text-indent:-99999px;
+	height:100%;
+	width:500px;
+	float:left;
+	margin:0;
+	padding:0;
+
+}
+
+
+#header {
+
+	width:979px;
+	height:83px;
+	margin: 0 auto;
+
+}
+
+#main {
+
+	width:979px;
+	margin: 0 auto;
+
+}
+
+#content {
+	
+	width:577px;
+	float:left;
+	z-index: 1;
+
+}
+
+#content h2 {
+
+	padding-bottom:10px;
+
+}
+
+/* ## main elements ################################### end ### */
+
+
+
+/* ## navigation ###################################### start # */
+
+nav { 
+	
+	padding:0;
+	margin:0 auto;
+	width:979px;
+	height: 39px;
+	
+		
+}
+
+
+nav ul {
+
+	margin:0;
+	padding:0;
+	list-style-type: none;
+	float:right;
+	
+}
+
+nav ul li {
+
+	float:left;
+	margin-left:30px;
+	line-height: 39px;
+	
+
+}
+
+nav ul li a {
+	
+	
+
+}
+
+.sidebar {
+	
+	width:402px;
+	float: left;
+
+}
+
+ul.topics, ul.topics li {
+
+	margin:0;
+	padding:0;
+	list-style:none;
+	width:auto;
+
+}
+
+ul.topics li {
+
+	display:block;
+
+}
+
+ul.topics li a {
+
+	display:block;
+	width:auto;
+	height:100%;
+	padding:5px;
+
+}
+
+/* ## navigation ###################################### end ### */
+
+
+/* ## content elements ################################ start # */
+
+
+article {
+
+	padding: 20px 20px;
+	width:auto;
+
+}
+
+div.coupons {
+
+	width:auto;
+	padding:10px 10px 0 10px;	
+
+}	
+
+div.coupons ul, div.coupons ul li {
+
+	list-style: none;
+	width: 519px;
+	padding:0;
+	margin:0;
+	
+}
+
+div.coupons ul li {
+
+	display:block;
+	height: 63px;
+	width: 515px;
+	position: relative;
+	margin-bottom: 7px;
+
+}
+
+div.coupons ul li a img {
+
+	margin:7px;
+
+}
+
+div.coupons ul li a span {
+
+	display:block;
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	top:inherit;
+	bottom:0;
+	left:0;
+	text-indent:-999999px;
+
+}
+
+div.coupons ul li h4 {
+
+	position: absolute;
+	top:10px;
+	left: 80px;
+	margin:0;
+	padding:0;
+
+}
+
+div.coupons ul li p.desc {
+
+	position: absolute;
+	top:15px;
+	left: 80px;
+	width:100px;
+
+}
+
+div.coupons ul li span.more {
+
+	
+	height:63px;
+	width: 342px;
+	position: absolute;
+	top:0;
+	right:0;
+	display: block;
+	
+}
+
+div.coupons ul li span.more strong {
+	
+	margin: 10px 0 0 10px;
+	padding:0;
+	display: block;
+
+}
+
+div.coupons ul li span.more p {
+
+	margin:0 0 0 10px;
+	padding:0;
+
+}
+
+
+div.coupons ul li span.more a.copy {
+
+	width: 83px;
+	height:14px;
+	float:right;	
+	margin-right:10px;
+	text-indent: -999999px;
+
+}
+
+.sidebar .sub div {
+
+	width:auto;
+	padding:15px;
+
+}
+
+.sidebar h3 {
+
+	margin: 0 0 20px 0;
+	padding:0 0 10px;
+
+}
+
+ul.flags, ul.flags li {
+
+	list-style: none;
+	margin:0;
+	padding:0;
+
+}
+
+
+ul.flags li {
+
+	display:inline;
+
+}
+
+#content h1 {
+	
+	padding: 15px 0 10px 0;
+	margin:0;
+
+}
+
+/* ## content elements ################################ end ### */
+
+
+/* ## footer ########################################## start # */
+
+footer {
+
+	display:block;
+	clear: both;
+
+}
+
+footer .goodies {
+
+	padding:20px 0;
+
+}
+
+footer h3 {
+
+	padding-bottom:10px;
+
+}
+
+footer .goodies ul, footer .goodies h3, footer .bottom {
+
+	margin: 0 auto;
+	width: 979px;
+	padding-bottom:20px;
+
+}
+
+footer .goodies ul, footer .goodies ul li {
+
+	padding:0;
+	list-style: none;
+
+}
+
+footer .goodies ul li {
+
+	float: left;
+	width:240px;
+	height:30px;
+
+}
+
+footer .goodies ul li a {
+
+	display:block;
+	width: 100%;
+	height:100%;
+	padding-left:30px;
+	line-height: 20px;
+
+}
+
+footer .bottom ul {
+
+	position: absolute;
+	top:0px;
+	right:0;
+	list-style: none;
+	margin:0;
+	padding:0;
+
+}
+
+footer .bottom ul li {
+
+	display:inline;
+	padding-left:20px;
+
+}
+
+/* ## footer ########################################## end ### */
+
+
+/* ## forms ########################################### start # */
+
+fieldset {
+
+	margin:0;
+	padding:0;
+	
+}
+
+input {
+
+	padding:7px;
+
+}
+
+button {
+
+	width:74px;
+	height:31px;
+	line-height:26px;	
+
+}
+
+#fieldset-search {
+	
+	position: absolute;
+	top:25px;
+	right:0;	
+	
+}
+
+#fieldset-search input {
+
+	margin:0;
+	padding:11px;
+	width:400px;
+	margin-right:10px;
+
+}
+
+#fieldset-tagsearch {
+
+	padding:15px;
+	position: relative;
+
+}
+
+#fieldset-tagsearch input {
+
+	width:208px;
+
+}
+
+#fieldset-tagsearch button {
+
+	position: absolute;
+	top:13px;
+	right:10px;
+
+}
+
+/* ## forms ########################################### end ### */
+
+
+/* ## Buttons ######################################## start # */
+
+#fieldset-search button {
+
+	width:100px;
+	height:42px;
+	line-height:38px;
+
+}
+
+.jcarousel-prev, .jcarousel-next {
+
+	width:21px;
+	height:20px;
+	display: block;
+	text-indent:-999999px;
+	position: absolute;
+	top:30px;
+	z-index: 1;
+
+}
+
+.jcarousel-prev { left:10px; }
+
+.jcarousel-next { right:10px; }
+
+a.feature {
+
+	display:block;
+	margin-left:20px;
+
+}
+
+/* ## Buttons ######################################## end ### */

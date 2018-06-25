@@ -1,0 +1,26 @@
+<?php
+$js_files = array(
+	'libs/jquery.js',
+	'libs/jquery.form.js',
+	'libs/jquery.blockUI.js',
+	'libs/jquery.livequery.js',
+	'libs/jquery.metadata.js',
+	'libs/jquery.colorbox.js',
+	'libs/jquery.autogeocomplete.js',
+	'libs/jquery.overlabel.js',
+	'libs/jquery-ui-1.8.12.custom.min.js',
+	'libs/jquery.lazyload.mini.js',
+	'libs/jquery.flash.js',
+	'libs/jquery.jcarousel.pack.js',
+	'libs/date.format.js',
+	'libs/ZeroClipboard.js',
+	'libs/jquery.truncate-2.3.js',
+	'libs/jquery.cookie.js',
+	'libs/jsapi.js',
+	'libs/markerclusterer.js',
+	'libs/cluster.js',
+	'libs/highcharts.js',
+	'libs/jquery.tipsy.js',
+	'common.js',
+);
+?>

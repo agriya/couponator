@@ -1,0 +1,115 @@
+body, nav, section, article, div {
+
+	font-family: "Trebuchet MS", "Verdana", "Helvetica", Sans;
+
+}
+
+#fieldset-search button {
+
+	font-size:10pt;
+	font-weight:bold;
+	text-transform: uppercase;
+
+}
+
+#fieldset-search input {
+
+	font-style: italic;
+	font-size: 10pt;
+
+}
+
+#fieldset-search input:hover, #fieldset-search input:focus, #fieldset-search input:active {
+
+	font-style: normal;
+
+}
+
+nav ul li {
+
+	text-transform: uppercase;
+	
+}
+
+#content {
+
+	font-size:11pt;
+
+}
+
+#content h1 {
+
+	text-transform: uppercase;
+	font-size:16pt;
+
+
+}
+
+#content h2, h3 {
+    margin-top:20px;
+	margin-bottom:20px;
+	text-transform: uppercase;
+	font-size:10pt;
+
+}
+
+div.coupons ul li h4 {
+
+	font-size:10pt;
+
+}
+
+div.coupons ul li p.desc {
+
+	font-size:9pt;
+
+}
+
+div.coupons ul li span.more {
+
+	font-size: 9pt;
+
+}
+
+div.coupons ul li span.more strong {
+
+	font-size:11pt;
+	text-transform: uppercase;
+
+}
+
+#fieldset-tagsearch {
+
+	font-size:10pt;
+
+}
+
+footer .goodies, footer .bottom { font-size:9pt; }
+
+/* ## Links ########################################## start # */
+
+a:link, a:active, a:visited { text-decoration: none; font-weight:bold; }
+
+a.tc-1 { font-size:7pt; }
+a.tc-2 { font-size:8pt; }
+a.tc-3 { font-size:9pt; }
+a.tc-4 { font-size:10pt; }
+a.tc-5 { font-size:11pt; }
+a.tc-6 { font-size:12pt; }
+a.tc-7 { font-size:13pt; }
+a.tc-8 { font-size:14pt; }
+a.tc-9 { font-size:15pt; }
+a.tc-10 { font-size:16pt; }
+a.tc-11 { font-size:17pt; }
+a.tc-12 { font-size:18pt; }
+a.tc-13 { font-size:19pt; }
+a.tc-14 { font-size:20pt; }
+a.tc-15 { font-size:21pt; }
+a.tc-16 { font-size:22pt; }
+a.tc-17 { font-size:23pt; }
+a.tc-18 { font-size:24pt; }
+a.tc-19 { font-size:25pt; }
+a.tc-20 { font-size:26pt; }
+
+
+/* ## Links ########################################## end ### */

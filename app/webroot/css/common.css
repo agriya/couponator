@@ -1,0 +1,710 @@
+/* $Id:common.css 187 2011-12-08 23:39:20Z josephine_065at09 $ */
+body {
+	background:url(../img/body-bg.png) repeat left top;
+}
+a {
+    color: #BD2031;
+    text-decoration: none;
+}
+a:hover {
+	color:#000;
+}
+a img {
+	border:1px solid #ddd;
+
+}
+a img:hover {
+	opacity:0.7;
+	filter:alpha(opacity=40);
+}
+.js .hide ,.hidden-info ,.hide{
+    display:none;
+}
+img{
+    vertical-align:middle;
+}
+div#colorbox h2 {
+	color:#9B2935;
+	font-size:15px;
+	padding: 5px 0px;
+}
+/* Flash */
+.flash-message-block {
+	height:50px;
+	top:0;
+	z-index:100000;
+	position:fixed;
+	left:0;
+	width:100%;
+}
+.message {
+	height:32px;
+	padding:19px 0 0 58px;
+	overflow:hidden;
+}
+#errorMessage {
+	background:#ffebf3;
+	border:1px solid #f06;
+}
+#successMessage,.success {
+	background:#eff;
+	border:1px solid #6f0;
+}
+#flashMessage {
+	background:#ffe;
+	border:1px solid #f60;
+}
+#errorMessage,#authMessage {
+	background:#ffebf3 url(../img/common-sprite.png) no-repeat 0 -158px;
+}
+#successMessage {
+	background:#eff url(../img/common-sprite.png) no-repeat 0 -522px;
+}
+#flashMessage {
+	background: #ffe url(../img/common-sprite.png) no-repeat 0 -720px;
+
+}
+#colorbox .flash-message-block{
+	position:absolute;
+}
+.notice,table.list td.notice {
+    background: url("../img/icon-form-error.png") no-repeat 4px 8px;
+    color: #FF6600;
+    padding: 5px 5px 5px 24px !important;
+}
+table.list td.notice{
+    text-align:left;
+}
+/* JavaScript */
+.overlabel-wrapper{
+	position:relative;
+}
+label.overlabel-apply {
+	position:absolute;
+	bottom:10px;
+	left:10px;
+	z-index:1;
+	color: #999;
+}
+div.label-hide .overlabel-wrapper label.overlabel-apply{
+	display:none;
+}
+div.error label.overlabel-apply{
+	color:#ff0000;
+	background: none repeat scroll 0 0 #FFF5C5;
+    padding: 2px;
+	bottom: 8px;
+}
+form.tag label.overlabel-apply{
+	bottom:12px;
+}
+/** Pging styles*/
+div.paging {
+	text-align:right;
+	padding:10px;
+}
+div.paging a {
+	background-color:#fffcf7;
+	text-decoration:none;
+	font-size:13px;
+}
+div.paging a,div.paging span.prev,div.paging span.next,div.paging span.current {
+	border:1px solid #eeeeee;
+	margin:2px;
+	padding:1px 5px;
+}
+div.paging span.prev,div.paging span.next {
+	display:none;
+}
+div.paging span.skip {
+	border:none;
+}
+div.paging a:hover,div.paging span.current {
+   background: none repeat scroll 0 0 #95202C;
+    border: 1px solid #95202C;
+    color: #FFFFFF;
+}
+
+/** form */
+div#colorbox form.normal {
+	margin:0px;
+	padding:5px;
+	width:90%;
+}
+form.normal {
+	margin:5px 2px 0px 43px;
+	padding:5px;
+	width:90%;
+}
+form.normal div.input {
+	padding:5px;
+	margin:5px;
+}
+form.normal div.input label {
+	position:absolute;
+	padding:3px 12px 0 0;
+	text-align:right;
+	width:120px;
+	margin:4px 0px 0px 0px;
+	font-size:13px;
+}
+form.normal div.file label{
+    margin:0px;
+}
+form.normal div.checkbox label,form.normal div.radio label {
+	display:inline;
+	margin:0px 0px 0px 5px;
+	padding-right:10px;
+	position:static;
+}
+form.normal div.checkbox label {
+	width:210px;
+}
+form.normal div.required label {
+	background:url("../img/common-sprite.png") no-repeat right -1290px;
+	padding:0 10px 0 0;
+}
+form.normal div.select div.checkbox label {
+	background:none;
+}
+form.normal div.select select,form.normal div.text input,form.normal div.textarea textarea,form.normal div.password input {
+	border:1px solid #DDDDDD;
+	font-size:1.1em;
+	margin:0 5px 0 140px;
+	padding:7px 2px;
+	width:275px;
+}
+#colorbox form.normal div.input label {
+	width:auto;
+}
+#colorbox form.normal div.select select,#colorbox form.normal div.text input,#colorbox form.normal div.textarea textarea,#colorbox form.normal div.password input {
+	margin:5px 5px 0 0;
+}
+#colorbox form.normal div.captcha-block {
+	margin:0 10px 0 4px;
+}
+#colorbox form.normal div.submit-block {
+	padding:9px 0 0 0;
+}
+#colorbox form.normal div.error-message {
+	margin:0 0 0 0;
+}
+form.normal div.select select {
+	padding:0px;
+	font-size:14px;
+	height:30px;
+}
+form.normal div.select label{
+	margin:0px 0px 0px 0px;
+	
+}
+form.normal div.input textarea {
+	height:100px;
+	width:275px;
+	border:1px solid #ddd;
+	margin:0 0 0 140px;
+}
+form.normal div.checkbox input,form.normal div.date label+select {
+	margin:0px 0px 0px 140px;
+}
+form.normal div.radio input {
+	width:16px;
+	margin:0px;
+}
+form.normal div.select select:hover,form.normal div.text input:hover,form.normal div.textarea textarea:hover,form.normal div.password input:hover,form.normal div.select select:active,form.normal div.text input:focus,form.normal div.textarea textarea:focus,form.normal div.password input:focus,form.normal div.select select:focus,form.normal div.text input:active.normal div.textarea textarea:active,form.normal div.password input:active {
+	border:1px solid #BFBFBF;
+	background-color:#fff;
+}
+form.normal div.error-message {
+	color:#f06;
+	text-align:left;
+	margin:8px 0 0 143px;
+}
+form.normal div.error {
+	background:none;
+	border:none;
+}
+form.normal div.error label {
+	color:#000;
+}
+form.normal div.error input,form.normal div.error textarea,form.normal div.error select {
+	background-color:#ffffe1;
+	border:1px solid #f06;
+}
+form.normal div.file input {
+	margin:0px 0px 0px 142px;
+}
+
+form.normal div.input input.bg-openid-input {
+	background:url(../img/common-sprite.png) no-repeat 0 -356px;
+	padding:4px 0 5px 25px;
+	width:50%;
+}
+span.openid-icon {
+	background:transparent url(../img/common-sprite.png) no-repeat 0 -356px;
+	display:inline-block;
+	height:16px;
+	width:16px;
+	font-size:0px;
+	text-indent:-3000em;
+	vertical-align:middle;
+}
+form.normal div.input input.bg-openid-input:active,form.normal div.input input.bg-openid-input:focus {
+	background:#fff url(../img/common-sprite.png) no-repeat scroll 0 -356px;
+}
+form.normal div.submit-block {
+	padding:9px 0 0 153px;
+}
+form.normal div.submit input, form.normal div.submit-block div.cancel-block a {
+	padding:0 30px 0 15px;
+}
+form.normal div.submit-block div.cancel-block a {
+	display:block;
+	padding:11px 30px 0 15px;
+	height:27px;
+}
+form.monitor div.submit,form.normal div.submit, form.normal div.submit-block div.cancel-block {
+	background:url("../img/common-sprite.png") no-repeat 0 -918px;
+	height:38px;
+	margin:0;
+	padding:0 0 0 9px;
+	}
+form.monitor div.submit input,form.normal div.submit input, form.normal div.submit-block div.cancel-block a {
+	background:url("../img/common-sprite.png") no-repeat scroll right -1106px;
+	border:0 none;
+	color:#BD2031;
+	cursor:pointer;
+	font-size:18px;
+	font-weight:normal;
+	height:38px;
+	padding:0 16px 0 4px;
+}
+form.normal div.submit input:hover{
+    color:#000;
+}
+span.help {
+	color:#9c9c9c;
+	display:block;
+	font-size:11px;
+	margin:5px 0 5px 139px;
+}
+/* calender style is begin */
+div.datepicker-content {
+	left:5px;
+	top:25px;
+	width:211px;
+	z-index:99999;
+	background:none repeat scroll 0 0 #FFFFFF;
+	border:1px solid #ddd;
+	position:absolute;
+	-moz-border-radius:3px 3px 3px 3px;
+	margin:-5px 0 0 -5px;
+}
+div.time-desc {
+	margin:5px 0 0 140px;
+	position:relative;
+}
+div.datepicker-container .ui-widget-content {
+	padding:3px;
+}
+.picker-img {
+	float:left;
+	margin:1px 3px 0 0;
+	cursor:pointer;
+}
+.displaydate {
+	border:1px solid #ddd;
+	float:left;
+	font-size:11px;
+	margin:0 2px;
+	padding:1px 4px;
+	background:#fff;
+}
+div.date-time-block div.date-time label {
+	padding:0;
+	width:82px;
+	position:static;
+	float:left;
+}
+.ui-menu-item {
+	background:#f1f1f1;
+	border:1px solid #DDD;
+	position:relative;
+	padding:5px;
+}
+.ui-menu-item a.ui-state-hover {
+	border:none;
+}
+div#mapblock ul.menu-over-ul {
+	background:none repeat scroll 0 0 #fff;
+	border:1px solid #ddd;
+	display:block;
+	left:200px;
+	margin:5px 0 0;
+	padding:0 0 1px 5px;
+	top:-34px;
+	width:192px;
+	z-index:1000 !important;
+	opacity:0.8;
+	filter:alpha(opacity=80);
+	position:absolute;
+}
+div#mapblock ul.menu-over-ul li {
+	padding:0px;
+	margin:0px;
+}
+div#mapblock .ui-menu-item a {
+	padding:5px;
+}
+div#mapblock .ui-menu-item a {
+	border:1px solid #eee;
+	border-color:#EEEEEE #EEEEEE #DDDDDD;
+	display:block;
+	padding:5px;
+}
+div#mapblock .ui-menu-item:hover>a,div#mapblock .menu-over-address:hover a {
+	background:#FDF9E1;
+	border:1px solid #FBCB09;
+	color:#c87404;
+}
+div#mapblock {
+	display:none;
+}
+#mapframe {
+	background-color:#E7E7E7;
+	left:207px;
+	padding:5px;
+	top:10px;
+	visibility:hidden;
+	width:200px;
+	position:absolute;
+}
+#mapwindow,#mapwindow div {
+	z-index:1 !important;
+}
+#mapframe #mapwindow {
+	width:200px;
+	height:200px;
+	position: static !important;
+}
+/* auto completed style begin */
+#mapblock .ui-autocomplete {
+	min-height:238px;
+	left:0px !important;
+	width:198px !important;
+	Z-index:4 !important;
+	top:4px !important;
+	position:relative;
+	border-right:1px solid #ddd;
+}
+div#mapblock {
+	background:none repeat scroll 0 0 #EEEEEE;
+	border:1px solid #DDDDDD;
+	left:250px;
+	padding:0 0 0 0;
+	width:425px;
+	top:65px;
+	z-index:100000;
+}
+div.padd-center div#mapblock {
+	left:190px;
+}
+div#js-autocomplete-block {
+	width:423px !important;
+	background:none repeat scroll 0 0 #FFFFFF;
+	border:1px solid #DDDDDD;
+}
+form.normal div.mapblock-info div.input label {
+	width:120px;
+}
+form.normal div.mapblock-info div.input label.overlabel-apply {
+	width:312px;
+}
+div.mapblock-info {
+	background:url("../img/icon-location.png") no-repeat scroll 65px 10px transparent;
+	padding:0;
+	z-index:2;
+	position:relative;
+}
+div#mapblock {
+	position:absolute;
+	top:33px;
+	left:150px;
+}
+form#UserCommentAddForm div.input textarea {
+	width:313px;
+}
+#colorbox form.comment-form div.input label {
+	margin:0 0 0;
+	text-align:left;
+	width:auto;
+	position:static;
+}
+#colorbox form.comment-form div.input textarea,#colorbox form#UserCommentAddForm div.input input {
+	margin:5px 5px 0 0;
+}
+#colorbox form.comment-form div.submit-block {
+	padding:0 0 0 10px;
+}
+.mceEditor {
+	display:block;
+	margin:28px 0 10px;
+}
+div.wallet-amount-block h3 {
+	padding: 15px 0 10px;
+}
+.form-block legend,.fields-block legend {
+	background:none repeat scroll 0 0 #F1F1F1;
+	border:1px solid #DDDDDD;
+	color:#BD2031;
+	font-weight:700;
+	padding:3px 10px;
+	margin:0 20px
+}
+.form-block,.fields-block {
+	border:1px solid #DDDDDD;
+	padding:5px;
+	margin:10px 0;
+}
+dl.list{
+	width:140px;
+	float:left;
+	margin:10px 0px 0px 0px;
+}
+dl.list  dt,dl.list dd {
+    float:left;
+    min-height:28px;
+}
+dl.list dt {
+    color: #94928C;
+    margin: 0 3px 0 0;
+    text-align: left;
+    width: 80px;
+}
+/** footer */
+#footer a {
+	color:#fff;
+	font-size:10px;
+}
+#footer a:hover{
+    text-decoration:underline;
+}
+.footer-link-block {
+	margin:30px 0 0;
+}
+.footer-image a.subscribe {
+	background:url("../img/footer-img.png") no-repeat scroll center top transparent;
+	height:110px;
+	margin:0 auto;
+	position:relative;
+	display:block;
+	text-align:center;
+	width:637px;
+	text-indent:-99999em;
+}
+p.copy {
+	float:left;
+	color:#fff;
+}
+ul.footer-link {
+	width:363px;
+}
+ul.footer-link li {
+	float:left;
+	background:url(../img/footer-sep.png) no-repeat left 3px;
+	padding:0px 5px;
+}
+ul.footer-link li:first-child {
+	background:none;
+}
+#agriya a.company {
+	background:url("../img/powered-by-agriya.png") no-repeat scroll left 5px transparent;
+	float:left;
+	height:20px;
+	margin:-4px 5px;
+	text-indent:-9999em;
+	width:80px;
+}
+#agriya p.powered span {
+	float:left;
+	margin-right:3px;
+}
+div.copywrite-info p {
+	float:left;
+	margin:1px 0 0;
+	color:#fff;
+}
+#agriya {
+	font-size:11px;
+}
+#agriya a.cssilize {
+	background:url("../img/cssilize.png") no-repeat scroll center top transparent;
+	display:block;
+	float:left;
+	height:17px;
+	text-indent:-9999em;
+	width:118px;
+}
+#agriya a.powered {
+	background:url("../img/powered-icon.png") no-repeat scroll left top transparent;
+	float:left;
+	height:17px;
+	text-indent:-9999em;
+	width: 95px;
+}
+
+/*rounded corner hacks */
+span.unreliablel-coupon,p.user-img-right span.admin ,.round-5, span.active-coupon, span.special-coupon,span.unreliable-coupon,span.partner,span.partner, span.couponcode-coupon, span.shopping-coupon, span.printable-coupon, span.free-coupon, span.new-coupon, span.affiliate-coupon-7,  span.affiliate-coupon-6,  span.affiliate-coupon-2,span.affiliate-coupon-1, span.affiliate-coupon-3, span.affiliate-coupon-4, span.affiliate-coupon-5, span.rejected-store, span.check-store, span.rejected-coupon, span.outdated-coupon, span.actives-coupon, span.rejected-store, span.manual-store, span.auto-store, ul.tag-link li a {
+	-moz-border-radius:5px;
+	-khtml-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+}
+.round-10 {
+	-moz-border-radius:10px;
+	-khtml-border-radius:10px;
+	-o-border-radius:10px;
+	border-radius: 10px;
+}
+.hidden-info, .js .hide, .hide {
+    display: none;
+}
+/* overright-reset-styles */
+#static-content div,#static-content span,#static-content applet,#static-content object,#static-content iframe,#static-content h1,#static-content h2,#static-content h3,#static-content h4,#static-content h5,#static-content h6,#static-content p,#static-content blockquote,#static-content pre,#static-content a,.static-content abbr,#static-content acronym,#static-content address,.static-content big,.static-content cite,.static-content code,#static-content del,#static-content dfn,#static-content em,#static-content font,#static-content img,#static-content ins,#static-content kbd,#static-content q,#static-content samp,#static-conten small,#static-conten strike,.static-content strong,.static-content sub,#static-content sup,#static-content tt,#static-content var,#static-content b,#static-content u,#static-content i,#static-content center,.static-content dl,.static-content dt,.static-content dd,.static-content ol,.static-content ul,.static-content li,.static-content fieldset,.static-content form,.static-content label,.static-content legend,.static-content table,.static-content caption,.static-content tbody,#static-content tfoot,#static-content thead,#static-content tr,#static-content th,#static-content td {
+	margin:inherit;
+	padding:inherit;
+	border:inherit;
+	outline:inherit;
+	font-size:inherit;
+	vertical-align:inherit;
+	background:inherit;
+	line-height:inherit;
+	color:#000;
+}
+#static-content span,#static-content strong {
+	padding:5px 0;
+	margin:5px 0;
+}
+#static-content li,#static-content p {
+	line-height:18px;
+}
+#static-content li {
+	display:list-item;
+}
+#static-content p {
+	margin:1.12em 0;
+	display:block;
+	unicode-bidi:embed;
+}
+#static-content h1 {
+	font-size:2em;
+	margin:.67em 0
+}
+#static-content h2 {
+	font-size:1.5em;
+	margin:.75em 0
+}
+#static-content h3 {
+	font-size:1.17em;
+	margin:.83em 0
+}
+#static-content ul {
+	list-style:inherit;
+	list-style-position:inside;
+}
+#static-content ol {
+	list-style:decimal;
+	list-style-position:inside;
+}
+#static-content blockquote,#static-content q {
+	quotes:inherit;
+}
+#static-content blockquote:before,#static-content blockquote:after,#static-content q:before,#static-content q:after {
+	content:'';
+	content: inherit;
+}
+/* remember to highlight inserts somehow! */
+#static-content ins {
+	text-decoration:inherit;
+}
+#static-content del {
+	text-decoration: inherit;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+#static-content table {
+	border-collapse:inherit;
+	border-spacing: inherit;
+}
+div.page-block {
+   padding:10px;
+}
+/* Hacks */
+/* CakePHP */
+.cake-sql-log {
+	font-family:"Courier New";
+	font-size:80%;
+}
+.cake-sql-log td,.cake-sql-log th {
+	padding:4px 8px;
+	text-align:left;
+	border:1px solid #eee;
+}
+pre.cake-debug {
+	background:#ffcc00;
+	font-size:120%;
+	line-height:140%;
+	margin-top:1em;
+	overflow:auto;
+	position:relative;
+}
+div.cake-stack-trace {
+	background:#fff;
+	border:4px dotted #ffcc00;
+	color:#333;
+	margin:0px;
+	padding:6px;
+	font-size:120%;
+	line-height:140%;
+	overflow:auto;
+	position:relative;
+}
+div.cake-code-dump pre {
+	position:relative;
+	overflow:auto;
+}
+div.cake-stack-trace pre,div.cake-code-dump pre {
+	color:#000000;
+	background-color:#F0F0F0;
+	margin:0px;
+	padding:1em;
+	overflow:auto;
+}
+div.cake-code-dump pre,div.cake-code-dump pre code {
+	clear:both;
+	line-height:15px;
+	margin:4px 2px;
+	padding:4px;
+	overflow:auto;
+}
+div.cake-code-dump span.code-highlight {
+	background-color:#FFFF00;
+	padding: 4px;
+}
+ /* http://www.positioniseverything.net/easyclearing.html */
+.clearfix:after {
+	clear:both;
+	content:'.';
+	display:block;
+	visibility:hidden;
+	height:0;
+}
+.clearfix {
+	display:inline-block;
+	display:block;
+}
+* html .clearfix {
+	height:1%;
+}
+*+html .clearfix {
+	display: inline-block;
+}

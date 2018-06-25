@@ -1,0 +1,107 @@
+/**
+ * This <div> element is wrapped by jCarousel around the list
+ * and has the classname "jcarousel-container".
+ */
+.jcarousel-container {
+    position: relative;
+}
+
+.jcarousel-clip {
+    z-index: 2;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width:566px;
+}
+
+.jcarousel-list {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+	height:100px;
+}
+
+.jcarousel-list li,
+.jcarousel-item {
+    float: left;
+    list-style: none;
+    /* We set the width/height explicitly. No width/height causes infinite loops. */
+    width:110px;
+    height: 100px;
+    margin:0;
+    padding:0;
+
+}
+
+.jcarousel-item a {
+	margin:0px 0px 5px 0px;
+}
+
+/**
+ * The buttons are added dynamically by jCarousel before
+ * the <ul> list (inside the <div> described above) and
+ * have the classnames "jcarousel-next" and "jcarousel-prev".
+ */
+.jcarousel-next {
+    z-index: 3;
+
+}
+
+.jcarousel-prev {
+    z-index: 3;
+
+}
+
+
+/* For jcarousel */
+.jcarousel-prev {
+
+	background: url(../img/user-sprite.png) no-repeat 0 -9173px ;
+
+}
+
+.jcarousel-prev:hover {
+
+	cursor: pointer;
+
+}
+
+.jcarousel-next {
+
+	background: url(../img/user-sprite.png) no-repeat 0 -7928px;
+
+}
+
+.jcarousel-next:hover {
+
+
+	cursor: pointer;
+
+}
+.jcarousel-prev, .jcarousel-next {
+
+	width:19px;
+	height:28px;
+	display: block;
+	text-indent:-999999px;
+	position: absolute;
+	margin:33px 4px 0 0;
+	z-index: 1;
+
+}
+
+.jcarousel-prev { left:10px; }
+
+.jcarousel-next { right:10px; }
+
+div.js-copyclip {
+margin-left: 90px; 
+background:#ffd500;
+text-align: center;
+color:#000;
+}

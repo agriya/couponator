@@ -1,0 +1,401 @@
+body {
+
+	background: url(../img/bg.png) no-repeat #e2e2e2;
+	background-position: 50% 0;
+
+}
+
+#header {
+
+	background: url(../img/logo.png) no-repeat transparent;
+
+}
+
+#content {
+
+	background: url(../img/knick.png) no-repeat #fff;
+
+}
+
+#content h1 {
+
+	color:#b74e2b;
+
+}
+
+#content h2 {
+
+	background: url(../img/dots.png) repeat-x transparent;
+	background-position: 0 100%;
+	color:#7a7a7a;
+
+}
+
+.sidebar h3 {
+
+	background: url(../img/dots2.png) repeat-x transparent;
+	background-position: 0 100%;
+	color:#a7a7a7;
+
+}
+
+
+div.coupons {
+
+	background-color: #f3f3f3;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+
+}
+
+div.coupons ul li {
+
+	background-color:#fff;
+
+}
+
+div.coupons ul li span.more {
+
+	background: url(../img/coupon.png) no-repeat #fff;
+	background-position: 100% 0;
+
+}
+
+div.coupons ul li:hover span.more {
+
+	background-position: 0% 0%;
+	cursor: pointer;
+
+}
+
+div.coupons ul li a img {
+	
+	border:1px solid #c0c0c0;
+
+}
+
+div.coupons ul li a span {
+
+	background: url(../img/magnify.png) no-repeat transparent;
+
+}
+
+div.coupons ul li p.desc {
+
+	color:#9d9d9d;
+
+}
+
+div.coupons ul li span.more {
+
+	color:#fff;
+
+}
+
+div.coupons ul li span.more a.copy {
+
+	background: url(../img/copy.png) no-repeat transparent;
+
+}
+
+div.coupons ul li span.more a.copy:hover {
+
+	background-position: 0 -30px;
+
+}
+
+.sidebar div.sub {
+
+	background-color:#cecece;
+	border-left:1px solid #a0a0a0;
+
+}
+
+footer {
+
+	background-color:#202122;
+
+}
+
+footer .goodies {
+
+	background-color:#3c3d3e;
+	border-bottom:11px solid #353535;
+
+}
+
+footer h3 {
+
+	color:#fff;
+	background:none;
+	font-size:11pt;
+
+}
+
+a.icon-1 {
+
+	background: url(../img/icon-1.png) no-repeat transparent;
+
+}
+
+a.icon-2 {
+
+	background: url(../img/icon-2.png) no-repeat transparent;
+
+}
+
+
+a.icon-3 {
+
+	background: url(../img/icon-3.png) no-repeat transparent;
+
+}
+
+
+a.icon-4 {
+
+	background: url(../img/icon-4.png) no-repeat transparent;
+
+}
+
+
+a.icon-5 {
+
+	background: url(../img/icon-5.png) no-repeat transparent;
+
+}
+
+
+a.icon-6 {
+
+	background: url(../img/icon-6.png) no-repeat transparent;
+
+}
+
+
+a.icon-7 {
+
+	background: url(../img/icon-7.png) no-repeat transparent;
+
+}
+
+
+a.icon-8 {
+
+	background: url(../img/icon-8.png) no-repeat transparent;
+
+}
+
+footer .bottom { color:#aaa; }
+
+ul.topics li {
+
+	border-bottom:1px solid #e5e5e5;
+
+}
+
+ul.topics li:last-child { border:none; }
+
+ul.topics li a:hover {
+
+	background-color:#9b9b9b;
+	color:#fff;
+
+}
+
+/* ## Forms ########################################## start # */
+
+fieldset {
+
+	border:none;
+
+}
+
+input {
+
+	border:none;
+
+}
+
+button {
+
+	border:none;
+	background:url(../img/button.png) no-repeat transparent;
+	color:#fff;
+	
+}
+
+button:hover {
+
+	background-position: 0 100%;
+	cursor: pointer;
+	
+}
+
+input {
+
+	border:1px solid #a7a7a7;
+
+}
+
+#fieldset-search input {
+
+	border:none;
+	background-color:#b74e2b;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+
+	
+}
+
+#fieldset-search input {
+
+	color:#ecaa49;
+
+}
+
+#fieldset-search input:hover, #fieldset-search input:focus, #fieldset-search input:active {
+
+	color:#fff;
+	
+}
+
+
+#fieldset-tagsearch {
+
+	background-color:#a0a0a0;
+	color:#fff;
+
+}
+
+ 
+
+
+/* ## Forms ########################################## end ### */
+
+/* ## Buttons ######################################## start # */
+
+#fieldset-search button {
+
+	border:none;
+	background: url(../img/button-search.png) no-repeat transparent;
+	color:#fff;
+
+}
+
+#fieldset-search button:hover {
+
+	background-position: 0 100%;
+
+}
+
+.jcarousel-prev {
+
+	background: url(../img/prev.png) no-repeat transparent;
+
+}
+
+.jcarousel-prev:hover {
+
+	background-position: 0 100%;
+	cursor: pointer;
+
+}
+
+.jcarousel-next {
+
+	background: url(../img/next.png) no-repeat transparent;
+
+}
+
+.jcarousel-next:hover {
+
+	background-position: 0 100%;
+	cursor: pointer;
+
+}
+
+/* ## Buttons ######################################## end ### */
+
+/* ## Links ########################################## start # */
+
+a:link, a:active, a:visited { color:#b3634e; }
+
+a:hover { color:#000; }
+
+nav ul li a:link, nav ul li a:active, nav ul li a:visited {
+
+	color:#fff;
+
+}
+
+nav ul li a:hover {
+
+	color:#000;
+
+}
+
+div.coupons ul li span.more a:link, div.coupons ul li span.more a:active, div.coupons ul li span.more a:visited {
+
+	color:#fff;
+
+}
+
+div.coupons ul li span.more a:hover {
+
+	color:#000;
+
+}
+
+.sidebar a:link, .sidebar a:active, .sidebar a:visited {
+
+	color:#fff;
+
+}
+
+.sidebar a:hover {
+
+	color:#000;
+
+}
+
+footer .goodies a:link, footer .goodies a:active, footer .goodies a:visited {
+
+	color:#aaaaaa;
+
+}
+
+footer .goodies a:hover {
+
+	color:#fff;
+
+}
+
+footer .bottom ul li a:link, footer .bottom ul li a:active, footer .bottom ul li a:visited {
+
+	color:#fff;
+
+}
+
+footer .bottom ul li a:hover {
+
+	color:#fff;
+
+}
+
+.threekay:link, .threekay:active, .threekay:visited {
+
+	background: url(../img/3k.png) no-repeat transparent;
+	height: 16px;
+	padding:1px 0px 1px 20px; 
+	color:#fff;
+
+}
+
+.threekay:hover {
+
+	background-position: 0 -30px;
+
+}
+
+/* ## Links ############################################ end # */

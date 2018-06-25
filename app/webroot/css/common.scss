@@ -1,0 +1,723 @@
+/* $Id:common.scss 187 2011-12-08 23:39:20Z josephine_065at09 $ */
+$color1:#BD2031;
+$color2:#9B2935;
+$color3:#fff;
+$color4:#ddd;
+$color5:#95202C;
+$color6:#FFF5C5;
+$color7:#fffcf7;
+$color8:#000;
+body {
+	background:url(../img/body-bg.png) repeat left top;
+}
+a {
+    color: $color1;
+    text-decoration: none;
+ &:hover {
+	color:$color8;
+ }
+ img {
+	border:1px solid $color4;
+	&:hover{
+    	opacity:0.7;
+     	filter:alpha(opacity=40);
+      }
+    }
+}
+.js .hide ,.hidden-info ,.hide{
+    display:none;
+}
+img{
+    vertical-align:middle;
+}
+div#colorbox h2 {
+	color:$color2;
+	font-size:15px;
+	padding: 5px 0px;
+}
+/* Flash */
+.flash-message-block {
+	height:50px;
+	top:0;
+	z-index:100000;
+	position:fixed;
+	left:0;
+	width:100%;
+}
+.message {
+	height:32px;
+	padding:19px 0 0 58px;
+	overflow:hidden;
+}
+#errorMessage {
+	background:#ffebf3;
+	border:1px solid #f06;
+}
+#successMessage,.success {
+	background:#eff;
+	border:1px solid #6f0;
+}
+#flashMessage {
+	background:#ffe;
+	border:1px solid #f60;
+}
+#errorMessage,#authMessage {
+	background:#ffebf3 url(../img/common-sprite.png) no-repeat 0 -158px;
+}
+#successMessage {
+	background:#eff url(../img/common-sprite.png) no-repeat 0 -522px;
+}
+#flashMessage {
+	background: #ffe url(../img/common-sprite.png) no-repeat 0 -720px;
+}
+.notice,table.list td.notice {
+    background: url("../img/icon-form-error.png") no-repeat 4px 8px;
+    color: #FF6600;
+    padding: 5px 5px 5px 24px !important;
+}
+table.list td.notice{
+    text-align:left;
+}
+/* JavaScript */
+.overlabel-wrapper{
+	position:relative;
+}
+label.overlabel-apply {
+	position:absolute;
+	bottom:10px;
+	left:10px;
+	z-index:1;
+	color: #999;
+}
+div.label-hide .overlabel-wrapper label.overlabel-apply{
+	display:none;
+}
+div.error label.overlabel-apply{
+	color:#ff0000;
+	background: none repeat scroll 0 0 $color6;
+    padding: 2px;
+	bottom: 8px;
+}
+form.tag label.overlabel-apply{
+	bottom:12px;
+}
+/** Pging styles*/
+div.paging {
+	text-align:right;
+	padding:10px;
+	a{
+	   background-color:$color7;
+	   text-decoration:none;
+       font-size:13px;
+    }
+     a,span.prev,span.next,span.current {
+	   border:1px solid #eeeeee;
+       margin:2px;
+	   padding:1px 5px;
+   }
+   span.prev, span.next {
+       display:none;
+    }
+    span.skip {
+	   border:none;
+   }
+  a:hover,span.current {
+        background: none repeat scroll 0 0 $color5;
+        border: 1px solid $color5;
+        color:$color3;
+     }
+}
+/** form */
+div#colorbox form.normal {
+	margin:0px;
+	padding:5px;
+	width:90%;
+	& div.input label {
+    	width:auto;
+    }
+    & div.select select,& div.text input,& div.textarea textarea,& div.password input {
+    	margin:5px 5px 0 0;
+    }
+    & div.captcha-block {
+        margin:0 10px 0 4px;
+    }
+    & div.submit-block {
+        padding:9px 0 0 0;
+    }
+    & div.error-message {
+     margin:0 0 0 0;
+    }
+}
+
+form.normal {
+	margin:5px 2px 0px 43px;
+	padding:5px;
+	width:90%;
+	div.input {
+       padding:5px;
+	   margin:5px;
+	   label {
+        	position:absolute;
+        	padding:3px 12px 0 0;
+        	text-align:right;
+        	width:120px;
+        	margin:4px 0px 0px 0px;
+        	font-size:13px;
+        }
+        input.bg-openid-input {
+        	background:url(../img/common-sprite.png) no-repeat 0 -356px;
+        	padding:4px 0 5px 25px;
+        	width:50%;
+           &.bg-openid-input:active,&.bg-openid-input:focus {
+        	   background:$color3 url(../img/common-sprite.png) no-repeat scroll 0 -356px;
+            }
+        }
+    }
+    div.checkbox label,div.radio label {
+    	display:inline;
+    	margin:0px 0px 0px 5px;
+    	padding-right:10px;
+    	position:static;
+    }
+    div.checkbox label {
+	   width:210px;
+    }
+    div.required label {
+    	background:url("../img/common-sprite.png") no-repeat right -1290px;
+    	padding:0 10px 0 0;
+    	margin:6px 0px 0px 0px;
+    }
+    div.select div.checkbox label {
+	   background:none;
+    }
+    div.select select,div.text input,div.textarea textarea,div.password input {
+    	border:1px solid $color4;
+    	font-size:1.1em;
+    	margin:0 5px 0 140px;
+    	padding:7px 2px;
+    	width:275px;
+    }
+     div.select select {
+    	padding:0px;
+    	font-size:14px;
+    	height:28px;
+    }
+    div.textarea textarea {
+    	height:100px;
+    	width:275px;
+    	border:1px solid $color4;
+    	margin:0 0 0 140px;
+    }
+    div.checkbox input,div.date label+select {
+    	margin:0px 0px 0px 140px;
+    }
+    form.normal div.radio input {
+    	width:16px;
+    	margin:0px;
+    }
+    div.select select:hover,div.text input:hover,div.textarea textarea:hover, div.password input:hover,div.select select:active,div.text input:focus,div.textarea textarea:focus,div.password input:focus,div.select select:focus,div.text input:active,div.textarea textarea:active,div.password input:active {
+    	border:1px solid #BFBFBF;
+    	background-color:$color3;
+    }
+    div.error-message {
+        color:#f06;
+    	text-align:left;
+    	margin:8px 0 0 143px;
+    }
+    & div.error {
+	   background:none;
+    	border:none;
+    	label {
+        	color:$color8;
+        }
+        input,textarea, select {
+    	    background-color:#ffffe1;
+        	border:1px solid #f06;
+        }
+      }
+      div.file input {
+	   margin:0px 0px 0px 142px;
+    }
+    div.submit-block {
+	   padding:9px 0 0 153px;
+	    div.cancel-block a {
+        	display:block;
+        	padding:11px 30px 0 15px;
+        	height:27px;
+        }
+    }
+    div.submit input,div.submit-block div.cancel-block a {
+	       padding:0 30px 0 15px;
+    }
+   
+}
+form.monitor div.submit,form.normal div.submit, form.normal div.submit-block div.cancel-block {
+    	background:url("../img/common-sprite.png") no-repeat 0 -918px;
+    	height:38px;
+    	margin:0;
+    	padding:0 0 0 9px;
+}
+
+form.monitor div.submit input,form.normal div.submit input, form.normal div.submit-block div.cancel-block a {
+	background:url("../img/common-sprite.png") no-repeat scroll right -1106px;
+	border:0 none;
+	color:$color1;
+	cursor:pointer;
+	font-size:18px;
+	font-weight:normal;
+	height:38px;
+	padding:0 16px 0 4px;
+}
+form.normal div.submit input:hover{
+    color:$color8;
+}
+span.help {
+	color:#9c9c9c;
+	display:block;
+	font-size:11px;
+	margin:5px 0 5px 139px;
+}
+span.openid-icon {
+	background:transparent url(../img/common-sprite.png) no-repeat 0 -356px;
+	display:inline-block;
+	height:16px;
+	width:16px;
+	font-size:0px;
+	text-indent:-3000em;
+	vertical-align:middle;
+}
+/* calender style is begin */
+div.datepicker-content {
+	left:5px;
+	top:25px;
+	width:211px;
+	z-index:99999;
+	background:none repeat scroll 0 0 $color3;
+	border:1px solid $color4;
+	position:absolute;
+	-moz-border-radius:3px 3px 3px 3px;
+	margin:-5px 0 0 -5px;
+	.ui-widget-content {
+	   padding:3px;
+    }
+}
+div.time-desc {
+	margin:5px 0 0 140px;
+	position:relative;
+}
+.picker-img {
+	float:left;
+	margin:1px 3px 0 0;
+	cursor:pointer;
+}
+.displaydate {
+	border:1px solid $color4;
+	float:left;
+	font-size:11px;
+	margin:0 2px;
+	padding:1px 4px;
+	background:$color3;
+}
+div.date-time-block div.date-time label {
+	padding:0;
+	width:82px;
+	position:static;
+	float:left;
+}
+.ui-menu-item {
+	background:#f1f1f1;
+	border:1px solid $color4;
+	position:relative;
+	padding:5px;
+}
+.ui-menu-item a.ui-state-hover {
+	border:none;
+}
+
+div#mapblock{
+	display:none;
+     ul.menu-over-ul {
+    	background:none repeat scroll 0 0 $color3s;
+    	border:1px solid $color4;
+    	display:block;
+    	left:200px;
+    	margin:5px 0 0;
+    	padding:0 0 1px 5px;
+    	top:-34px;
+    	width:192px;
+    	z-index:1000 !important;
+    	opacity:0.8;
+    	filter:alpha(opacity=80);
+    	position:absolute;
+    	li {
+        	padding:0px;
+        	margin:0px;
+        }
+    }
+    .ui-menu-item a {
+	    padding:5px;
+	   	border:1px solid #eee;
+	    border-color:#EEEEEE #EEEEEE $color4;
+	    display:block;
+    }
+    .ui-menu-item:hover>a,.menu-over-address:hover a {
+    	background:#FDF9E1;
+    	border:1px solid #FBCB09;
+    	color:#c87404;
+    }
+}
+#mapframe {
+	background-color:#E7E7E7;
+	left:207px;
+	padding:5px;
+	top:10px;
+	visibility:hidden;
+	width:200px;
+	position:absolute;
+	#mapwindow {
+    	width:200px;
+    	height:200px;
+    	position: static !important;
+    }
+}
+#mapwindow,#mapwindow div {
+	z-index:1 !important;
+}
+/* auto completed style begin */
+div#mapblock {
+	background:none repeat scroll 0 0 #EEEEEE;
+	border:1px solid $color4;
+	left:250px;
+	padding:0 0 0 0;
+	width:425px;
+	top:65px;
+	z-index:100000;
+	position:absolute;
+	top:33px;
+	left:150px;
+	.ui-autocomplete {
+    	min-height:238px;
+    	left:0px !important;
+    	width:198px !important;
+    	Z-index:4 !important;
+    	top:4px !important;
+    	position:relative;
+    	border-right:1px solid $color4;
+    }
+}
+
+
+div.padd-center div#mapblock {
+	left:190px;
+}
+div#js-autocomplete-block {
+	width:423px !important;
+	background:none repeat scroll 0 0 $color3;
+	border:1px solid $color4;
+}
+form.normal div.mapblock-info {
+    div.input label {
+    	width:120px;
+    	label.overlabel-apply {
+	        width:312px;
+        }
+    }
+}
+div.mapblock-info {
+	background:url("../img/icon-location.png") no-repeat scroll 65px 10px transparent;
+	padding:0;
+	z-index:2;
+}
+form#UserCommentAddForm div.input textarea {
+	width:313px;
+}
+#colorbox{
+  form.comment-form div.input{
+   label {
+    	margin:0 0 0;
+    	text-align:left;
+    	width:auto;
+    	position:static;
+    }
+    textarea{
+        margin:5px 5px 0 0;
+    }
+
+  }
+   form#UserCommentAddForm div.input input {
+        margin:5px 5px 0 0;
+    }
+     form.comment-form div.submit-block {
+	   padding:0 0 0 10px;
+    }
+}
+.mceEditor {
+	display:block;
+	margin:28px 0 10px;
+}
+div.wallet-amount-block h3 {
+	padding: 15px 0 10px;
+}
+.form-block,.fields-block {
+	border:1px solid $color4;
+	padding:5px;
+	margin:10px 0;
+    legend {
+    	background:none repeat scroll 0 0 #F1F1F1;
+    	border:1px solid $color4;
+    	color:$color1;
+    	font-weight:700;
+    	padding:3px 10px;
+    	margin:0 20px
+    }
+}
+dl.list{
+	width:140px;
+	float:left;
+	margin:10px 0px 0px 0px;
+	dt,dd {
+        float:left;
+        min-height:28px;
+    }
+    dt {
+        color: #94928C;
+        margin: 0 3px 0 0;
+        text-align: left;
+        width: 80px;
+    }
+	
+}
+
+/** footer */
+#footer a {
+	color:$color3;
+	font-size:10px;
+    &:hover{
+        text-decoration:underline;
+    }
+}
+.footer-link-block {
+	margin:30px 0 0;
+}
+.footer-image a.subscribe {
+	background:url("../img/footer-img.png") no-repeat scroll center top transparent;
+	height:110px;
+	margin:0 auto;
+	position:relative;
+	display:block;
+	text-align:center;
+	width:637px;
+	text-indent:-99999em;
+}
+p.copy {
+	float:left;
+	color:$color3;
+}
+ul.footer-link {
+	width:363px;
+	 li {
+    	float:left;
+        background:url(../img/footer-sep.png) no-repeat left 3px;
+	   padding:0px 5px;
+	   &:first-child{
+         background:none;
+       }
+    }
+	
+}
+#agriya{
+    font-size:11px;
+    a.company {
+    	background:url("../img/powered-by-agriya.png") no-repeat scroll left 5px transparent;
+    	float:left;
+    	height:20px;
+    	margin:-4px 5px;
+    	text-indent:-9999em;
+    	width:80px;
+    }
+     p.powered span {
+    	float:left;
+    	margin-right:3px;
+    }
+    a.cssilize,a.powered{
+        height:17px;
+        text-indent:-9999em;
+       	display:block;
+    }
+    a.cssilize {
+    	background:url("../img/cssilize.png") no-repeat scroll center top transparent;
+      	float:right;
+      	width:118px;
+    }
+    a.powered {
+    	background:url("../img/powered-icon.png") no-repeat scroll left top transparent;
+    	float:left;
+        height:17px;
+       	width: 95px;
+    }
+
+}
+div.copywrite-info p {
+	float:left;
+	margin:1px 0 0;
+	color:$color3;
+}
+/*rounded corner hacks */
+span.unreliablel-coupon,p.user-img-right span.admin ,.round-5, span.active-coupon, span.special-coupon,span.unreliable-coupon,span.partner,span.partner, span.couponcode-coupon, span.shopping-coupon, span.printable-coupon, span.free-coupon, span.new-coupon, span.affiliate-coupon-7,  span.affiliate-coupon-6,  span.affiliate-coupon-2,span.affiliate-coupon-1, span.affiliate-coupon-3, span.affiliate-coupon-4, span.affiliate-coupon-5, span.rejected-store, span.check-store, span.rejected-coupon, span.outdated-coupon, span.actives-coupon, span.rejected-store, span.manual-store, span.auto-store, ul.tag-link li a {
+	-moz-border-radius:5px;
+	-khtml-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+}
+.round-10 {
+	-moz-border-radius:10px;
+	-khtml-border-radius:10px;
+	-o-border-radius:10px;
+	border-radius: 10px;
+}
+/* overright-reset-styles */
+#static-content div,#static-content span,#static-content applet,#static-content object,#static-content iframe,#static-content h1,#static-content h2,#static-content h3,#static-content h4,#static-content h5,#static-content h6,#static-content p,#static-content blockquote,#static-content pre,#static-content a,.static-content abbr,#static-content acronym,#static-content address,.static-content big,.static-content cite,.static-content code,#static-content del,#static-content dfn,#static-content em,#static-content font,#static-content img,#static-content ins,#static-content kbd,#static-content q,#static-content samp,#static-conten small,#static-conten strike,.static-content strong,.static-content sub,#static-content sup,#static-content tt,#static-content var,#static-content b,#static-content u,#static-content i,#static-content center,.static-content dl,.static-content dt,.static-content dd,.static-content ol,.static-content ul,.static-content li,.static-content fieldset,.static-content form,.static-content label,.static-content legend,.static-content table,.static-content caption,.static-content tbody,#static-content tfoot,#static-content thead,#static-content tr,#static-content th,#static-content td {
+	margin:inherit;
+	padding:inherit;
+	border:inherit;
+	outline:inherit;
+	font-size:inherit;
+	vertical-align:inherit;
+	background:inherit;
+	line-height:inherit;
+	color:#000;
+}
+#static-content{
+    span,strong {
+    	padding:5px 0;
+    	margin:5px 0;
+    }
+    li,p {
+    	line-height:18px;
+    }
+    li {
+	   display:list-item;
+    }
+    p {
+    	margin:1.12em 0;
+    	display:block;
+    	unicode-bidi:embed;
+    }
+     h1 {
+    	font-size:2em;
+    	margin:.67em 0
+    }
+    h2 {
+    	font-size:1.5em;
+    	margin:.75em 0
+    }
+    h3 {
+    	font-size:1.17em;
+    	margin:.83em 0
+    }
+    ul {
+    	list-style:inherit;
+    	list-style-position:inside;
+    }
+    ol {
+    	list-style:decimal;
+    	list-style-position:inside;
+    }
+    blockquote, q {
+    	quotes:inherit;
+    }
+    blockquote:before, blockquote:after, q:before, q:after {
+    	content:'';
+    	content: inherit;
+    }
+}
+
+/* remember to highlight inserts somehow! */
+#static-content{
+ ins ,del {
+    text-decoration:inherit;
+  }
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+#static-content table {
+	border-collapse:inherit;
+	border-spacing: inherit;
+}
+div.page-block {
+   padding:10px;
+}
+/* http://www.positioniseverything.net/easyclearing.html */
+.clearfix {
+	display:inline-block;
+	display:block;
+    &:after {
+    	clear:both;
+    	content:'.';
+    	display:block;
+    	visibility:hidden;
+    	height:0;
+    }
+}
+* html .clearfix {
+	height:1%;
+}
+*+html .clearfix {
+	display: inline-block;
+}
+/* Hacks */
+/* CakePHP */
+.cake-sql-log {
+	font-family:"Courier New";
+	font-size:80%;
+	td, th {
+    	padding:4px 8px;
+    	text-align:left;
+    	border:1px solid #eee;
+    }
+}
+pre.cake-debug {
+	background:#ffcc00;
+	font-size:120%;
+	line-height:140%;
+	margin-top:1em;
+	overflow:auto;
+	position:relative;
+}
+div.cake-stack-trace {
+	background:#fff;
+	border:4px dotted #ffcc00;
+	color:#333;
+	margin:0px;
+	padding:6px;
+	font-size:120%;
+	line-height:140%;
+	overflow:auto;
+	position:relative;
+}
+div.cake-code-dump pre {
+	position:relative;
+	overflow:auto;
+}
+div.cake-stack-trace,div.cake-code-dump{
+    pre {
+    	color:#000000;
+    	background-color:#F0F0F0;
+    	margin:0px;
+    	padding:1em;
+    	overflow:auto;
+    }
+}
+div.cake-code-dump pre,div.cake-code-dump pre code {
+	clear:both;
+	line-height:15px;
+	margin:4px 2px;
+	padding:4px;
+	overflow:auto;
+}
+div.cake-code-dump span.code-highlight {
+	background-color:#FFFF00;
+	padding: 4px;
+}
+
+

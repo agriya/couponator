@@ -1,0 +1,75 @@
+/* $Id:maintanace.scss 187 2012-01-02 23:39:20Z josephine_065at09 $ */
+$color1:#C4E6FD;
+$color2:#FEFEFE;
+$color3:#116FA7;
+
+body.maintanace{
+    background:$color1;
+    font-family:arial;
+    font-size:12px;
+    color:#000;
+    line-height:17px;
+}
+h1 a {
+    background: none repeat scroll 0 0 transparent;
+    color: #color2;
+    display: block;
+    height: 74px;
+    margin: 20px 0 30px 62px;
+    text-indent: -99999em;
+    width: 318px;
+     background: url("../img/logo.png") no-repeat scroll left top transparent;
+}
+div.maintanace-mode{
+    background: url("../img/maintanace-mode.png") no-repeat scroll right bottom #C4E6FD;
+    margin: 0 auto;
+    min-height: 466px;
+    width:763px;
+}
+div.maintanace-inner-mode{
+   background: url("../img/maintanace-bg.png") no-repeat scroll left top;
+   height: 232px;
+   padding: 40px 48px;
+   width: 413px;
+   h2{
+        color:$color3;
+        font-size: 46px;
+        font-weight: bold;
+        padding: 2px 0 20px;
+        &.maintenance-title{
+           padding:25px 0 25px 0;
+        }
+    }
+     p{
+        padding:2px 0;
+    }
+    
+}
+p.try-info{
+    font-weight:bold;
+}
+div.maintanace-mode form.normal{
+        div.input label{
+        	width:77px;
+        }
+        div.text input,div.password input{
+        	margin:0px 0px 0px 100px;
+        	padding:5px;
+        	width:200px;
+        }
+        div.checkbox input {
+        	margin:0px 0px 0px 100px;
+        }
+        div.error-message {
+            margin:-20px 0 0 320px;
+        }
+        div.submit-block{
+        	padding:6px 0 0 107px;
+        }
+}
+div.maintanace-mode form.normal div.input,div.maintanace-mode form.normal{
+	margin:0px;
+}
+div.maintanace-mode div.fromleft{
+	margin:3px 0 0 106px;
+}

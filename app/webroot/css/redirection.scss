@@ -1,0 +1,126 @@
+$color1: #000000;
+$color2: #ffffff;
+$color3: #c65399;
+$color4: #CCCCCC;
+$color5: #63003c;
+$color6: #0a0a0a;
+$color7: #545454;
+
+/* $Id:redirect.css 187 2011-12-08 23:39:20Z josephine_065at09 $ */
+/* common*/
+.content {
+	background:url(../img/body-bg.png) repeat left top;
+	color:#545454;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height:15px;
+}
+a {
+  color: $color3;
+  text-decoration: none;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    color: $color5;
+  }
+}
+h2 {
+  color: $color6;
+  font-size: 23px;
+  padding: 10px;
+  line-height: 25px;
+  text-transform: capitalize;
+}
+body {
+	background:url(../img/body-bg.png) repeat left top;
+}
+/* ------ openid style loading page -------*/
+div.authorize-page {
+  padding: 10px;
+  margin: 150px auto;
+  width: 600px;
+}
+#header .openid-block {
+  width: 725px;
+}
+#main div.openid-block {
+  padding: 15px 0 0;
+}
+#theme span {
+  float: left;
+  text-indent: -99999px;
+  &.site-logo {
+     background: url("../img/logo.png") no-repeat scroll left top transparent;
+    height: 72px;
+    margin: 19px 0 0 0;
+    width: 275px;
+  }
+  &.openid-logo {
+    float: left;
+    height: 130px;
+    width: 150px;
+  }
+}
+.openid-container div.authorize-page {
+  margin: 150px auto 150px 500px;
+}
+div#colorbox {
+  div.authorize-page {
+    margin: 10px auto;
+    width: auto;
+  }
+  #theme h1 {
+    width: 120px;
+  }
+}
+div.authorize-head h2 {
+  float: left;
+  padding: 0 0 10px;
+}
+span.openid-to {
+    background: url("../img/redircet-sprite.png") no-repeat 0 -1273px;
+    height: 50px;
+    margin: 40px 26px 0 27px;
+    width: 50px;
+}
+#twitter-authorizecontainer #theme span.openid-logo {
+    background:url(../img/redircet-sprite.png) no-repeat 0 -684px;
+}
+#facebook-authorizecontainer #theme span.openid-logo {
+    background:url(../img/redircet-sprite.png) no-repeat 0 0px;
+}
+#yahoo_openid_message #theme span.openid-logo {
+    background:url(../img/redircet-sprite.png) no-repeat  0 -912px;
+}
+#google_openid_message #theme span.openid-logo {
+    background:url(../img/redircet-sprite.png) no-repeat 0 -228px;
+}
+.loading {
+  width: 20px;
+  height: 20px;
+  text-indent: -99999em;
+  padding: 0px !important;
+  margin: 0px !important;
+  background: url(../img/loading.gif) no-repeat left top;
+  float: left;
+  margin: 0 0 0 20px;
+}
+/* http://www.positioniseverything.net/easyclearing.html */
+.clearfix {
+  &:after {
+    clear: both;
+    content: '.';
+    display: block;
+    visibility: hidden;
+    height: 0;
+  }
+  display: inline-block;
+  display: block;
+}
+* html .clearfix {
+  height: 1%;
+}
+*+html .clearfix {
+  display: inline-block;
+}

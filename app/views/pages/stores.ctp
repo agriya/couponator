@@ -1,0 +1,1 @@
+ <div><?php echo $this->element('stores-lst',array('config' => 'sec')); ?></div>
